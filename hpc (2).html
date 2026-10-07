@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>समग्र प्रगतिपत्रक (HPC) - प्रारंभिक स्तर (इयत्ता ३ री ते ५ वी) | NCERT-PARAKH</title>
+  <title>समग्र प्रगतिपत्रक (HPC) - पायाभूत स्तर | २० विद्यार्थी संच</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
-  
   <style>
     body {
       font-family: 'Mukta', sans-serif;
       background-color: #f1f5f9;
-      color: #0f172a;
+      color: #1e293b;
     }
     .heading-font {
       font-family: 'Yatra One', cursive, 'Mukta', sans-serif;
@@ -24,171 +23,154 @@
       background-color: #ffffff;
       border: 1px solid #cbd5e1;
       border-radius: 0.375rem;
-      padding: 0.3rem 0.5rem;
-      font-size: 0.85rem;
-      transition: all 0.15s ease-in-out;
+      padding: 0.35rem 0.5rem;
+      transition: all 0.2s ease;
     }
     input:focus, select:focus, textarea:focus {
       outline: none;
       border-color: #ea580c;
-      box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.2);
+      box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.25);
       background-color: #fff;
     }
-    
-    .rubric-btn.active-beginner {
-      background-color: #ea580c !important;
-      color: #ffffff !important;
-      border-color: #c2410c !important;
-      font-weight: 700;
-    }
-    .rubric-btn.active-proficient {
+    .rubric-level-btn.active-nirjhar {
       background-color: #0284c7 !important;
       color: #ffffff !important;
       border-color: #0369a1 !important;
       font-weight: 700;
     }
-    .rubric-btn.active-advanced {
+    .rubric-level-btn.active-parvat {
       background-color: #16a34a !important;
       color: #ffffff !important;
       border-color: #15803d !important;
       font-weight: 700;
     }
-
+    .rubric-level-btn.active-aakash {
+      background-color: #9333ea !important;
+      color: #ffffff !important;
+      border-color: #7e22ce !important;
+      font-weight: 700;
+    }
     .student-pill.active-student {
       background-color: #c2410c;
       color: #ffffff;
       border-color: #9a3412;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
-      font-weight: 700;
-    }
-
-    @page {
-      size: A4 portrait;
-      margin: 10mm 12mm;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      font-weight: bold;
     }
     @media print {
       body {
         background-color: #ffffff !important;
-        font-size: 10pt;
-        color: #000000 !important;
+        font-size: 11pt;
       }
       .no-print {
         display: none !important;
       }
-      .a4-print-page {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 0 1.5rem 0 !important;
+      .print-page {
+        page-break-after: always;
+        break-after: page;
         padding: 0.5rem !important;
+        margin-bottom: 2rem !important;
         box-shadow: none !important;
-        border: 2px solid #334155 !important;
-        page-break-after: always !important;
-        break-after: page !important;
+        border: 2px solid #cbd5e1 !important;
       }
-      .batch-separator {
-        page-break-before: always !important;
-        break-before: page !important;
+      .batch-student-separator {
+        page-break-before: always;
+        break-before: page;
       }
       input, textarea, select {
-        border-color: #94a3b8 !important;
+        border-color: #cbd5e1 !important;
         background: transparent !important;
-        box-shadow: none !important;
-      }
-      select {
-        appearance: none;
-        -webkit-appearance: none;
+        resize: none;
       }
     }
   </style>
 </head>
 <body class="min-h-screen text-slate-800 pb-12">
 
-  <header class="no-print sticky top-0 z-40 bg-amber-600 text-white shadow-md border-b border-amber-700">
-    <div class="max-w-7xl mx-auto px-3 py-2 flex flex-wrap items-center justify-between gap-2">
+  <header class="no-print sticky top-0 z-40 bg-orange-600 text-white shadow-lg border-b border-orange-700">
+    <div class="max-w-7xl mx-auto px-3 py-2.5 flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center space-x-2">
-        <span class="text-xl md:text-2xl font-black bg-white text-amber-700 px-2 py-0.5 rounded shadow">HPC</span>
+        <span class="text-xl md:text-2xl font-black bg-white text-orange-700 px-2 py-0.5 rounded shadow">HPC</span>
         <div>
-          <h1 class="font-bold text-sm md:text-base leading-tight">समग्र प्रगतिपत्रक (HPC) - प्रारंभिक स्तर (इयत्ता ३ री ते ५ वी)</h1>
-          <p class="text-[11px] text-amber-100">NCERT • PARAKH • Ministry of Education (NEP 2020)</p>
+          <h1 class="font-bold text-sm md:text-base leading-tight">समग्र प्रगतिपत्रक (HPC) - २० विद्यार्थी संच</h1>
+          <p class="text-[11px] text-orange-100">महाराष्ट्र शासन | SCERT पुणे | पायाभूत स्तर</p>
         </div>
       </div>
 
       <!-- Quick Action Buttons -->
       <div class="flex flex-wrap items-center gap-1.5 text-xs">
-        <button onclick="loadTwentyPreparatoryDemo()" class="bg-amber-100 hover:bg-white text-amber-950 font-bold px-2.5 py-1.5 rounded shadow flex items-center gap-1">
+        <button type="button" onclick="loadTwentySampleStudents()" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-2.5 py-1.5 rounded shadow flex items-center gap-1">
           <span>👥 २० नमुना विद्यार्थी भरा</span>
         </button>
-        <button onclick="openRosterModal()" class="bg-amber-800 hover:bg-amber-900 text-white px-2.5 py-1.5 rounded shadow flex items-center gap-1 font-semibold">
+        <button type="button" onclick="openStudentRosterModal()" class="bg-orange-800 hover:bg-orange-900 text-white px-2.5 py-1.5 rounded shadow flex items-center gap-1 font-medium">
           <span>📋 विद्यार्थी यादी (<span id="totalStudentsCount">20</span>)</span>
         </button>
-        <button onclick="saveCurrentStudentData(true)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+        <button type="button" onclick="saveCurrentStudentData(true)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
           <span>💾 जतन करा (Save)</span>
         </button>
-        <button onclick="addNewStudent()" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-2.5 py-1.5 rounded shadow flex items-center gap-1">
+        <button type="button" onclick="addNewStudent()" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-2.5 py-1.5 rounded shadow flex items-center gap-1">
           <span>➕ नवीन जोडा</span>
         </button>
-        <button onclick="printCurrentStudent()" class="bg-purple-700 hover:bg-purple-600 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
-          <span>🖨️ A4 प्रिंट (चालू)</span>
+        <button type="button" onclick="printCurrentStudent()" class="bg-purple-700 hover:bg-purple-600 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+          <span>🖨️ चालू विद्यार्थी प्रिंट</span>
         </button>
-        <button onclick="printAllTwentyStudents()" class="bg-slate-900 hover:bg-black text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
-          <span>📚 सर्व २० विद्यार्थी प्रिंट</span>
+        <button type="button" onclick="printAllStudents()" class="bg-slate-900 hover:bg-black text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+          <span>📚 सर्व प्रिंट</span>
         </button>
       </div>
     </div>
 
-    <div class="bg-amber-700/95 px-3 py-1.5 border-t border-amber-500/50">
+    <!-- Student Quick Switcher Ribbon -->
+    <div class="bg-orange-700/90 px-3 py-2 border-t border-orange-500/50">
       <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs">
-        <div class="flex items-center gap-1 overflow-x-auto py-1 max-w-full" id="studentRibbonContainer">
-          <!-- 1 to 20 Student Pills -->
+        <div class="flex items-center gap-1 overflow-x-auto py-1 max-w-full" id="studentPillsContainer">
+          <!-- Dynamic Pills will render here -->
         </div>
-        <div class="text-amber-100 font-medium shrink-0 flex items-center gap-2">
-          <span>चालू विद्यार्थी :</span>
-          <span id="activeBadge" class="bg-white text-amber-900 px-2 py-0.5 rounded font-bold">१. आरव गायकवाड</span>
+        <div class="text-orange-100 font-medium shrink-0 flex items-center gap-2">
+          <span>सध्या निवडलेला विद्यार्थी :</span>
+          <span id="activeStudentBadge" class="bg-white text-orange-800 px-2 py-0.5 rounded font-bold">१. आरव गायकवाड</span>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Toast Notification -->
-  <div id="saveToast" class="no-print hidden fixed bottom-4 right-4 bg-slate-900 text-white px-4 py-2.5 rounded-lg shadow-2xl text-xs z-50 flex items-center gap-2 border border-slate-700">
-    <span class="text-emerald-400 font-bold text-sm">✓</span> <span id="toastMsg">माहिती यशस्वीरीत्या सेव्ह झाली.</span>
-  </div>
-
-  <!-- Custom Alert / Confirm Modal -->
+  <!-- Generic Alert/Info Modal -->
   <div id="customModal" class="no-print hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4 backdrop-blur-sm">
-    <div class="bg-white rounded-xl max-w-md w-full p-5 shadow-2xl border border-amber-300">
-      <div class="flex items-center gap-3 mb-2">
+    <div class="bg-white rounded-xl max-w-md w-full p-5 shadow-2xl border border-orange-300 transform transition-all">
+      <div class="flex items-center gap-3 mb-3">
         <span id="modalIcon" class="text-2xl">ℹ️</span>
         <h3 id="modalTitle" class="text-base font-bold text-gray-800">सूचना</h3>
       </div>
-      <p id="modalMessage" class="text-xs text-gray-600 leading-relaxed mb-4"></p>
+      <p id="modalMessage" class="text-sm text-gray-600 leading-relaxed mb-5"></p>
       <div class="flex justify-end gap-2" id="modalActions">
-        <button onclick="closeCustomModal()" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold px-4 py-2 rounded">समजले (OK)</button>
+        <button type="button" onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+          समजले (OK)
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Student Roster Modal -->
+  <!-- Student Roster & Management Modal -->
   <div id="rosterModal" class="no-print hidden fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4 backdrop-blur-sm">
-    <div class="bg-white rounded-xl max-w-3xl w-full p-5 shadow-2xl border border-amber-300 max-h-[90vh] flex flex-col">
+    <div class="bg-white rounded-xl max-w-3xl w-full p-5 shadow-2xl border border-orange-300 max-h-[90vh] flex flex-col">
       <div class="flex items-center justify-between border-b pb-3 mb-3">
-        <h3 class="text-base font-bold text-amber-800 flex items-center gap-2">
-          <span>👥 विद्यार्थी व्यवस्थापन तक्ता (२० विद्यार्थ्यांची यादी)</span>
+        <h3 class="text-base font-bold text-orange-800 flex items-center gap-2">
+          <span>👥 विद्यार्थी व्यवस्थापन तक्ता</span>
         </h3>
-        <button onclick="closeRosterModal()" class="text-gray-400 hover:text-gray-700 text-lg font-bold px-2">&times;</button>
+        <button type="button" onclick="closeRosterModal()" class="text-gray-400 hover:text-gray-700 text-lg font-bold px-2">&times;</button>
       </div>
-      <p class="text-xs text-gray-500 mb-3">येथून कोणत्याही विद्यार्थ्याचे प्रगतिपत्रक उघडा किंवा २० विद्यार्थ्यांचा संच बॅकअप (JSON) म्हणून जतन करा.</p>
+      <p class="text-xs text-gray-500 mb-3">येथून तुम्ही कोणत्याही विद्यार्थ्याची माहिती त्वरित उघडू शकता, बदलू शकता किंवा माहिती डाउनलोड करू शकता.</p>
 
       <div class="overflow-y-auto flex-1 border rounded-lg">
         <table class="min-w-full text-xs text-left">
-          <thead class="bg-amber-100 text-amber-950 font-bold sticky top-0">
+          <thead class="bg-orange-100 text-orange-950 font-bold sticky top-0">
             <tr>
               <th class="p-2 border-b">क्र.</th>
               <th class="p-2 border-b">हजेरी क्र.</th>
-              <th class="p-2 border-b">नाव</th>
+              <th class="p-2 border-b">विद्यार्थ्याचे नाव</th>
               <th class="p-2 border-b">इयत्ता</th>
-              <th class="p-2 border-b">अपार आय.डी.</th>
-              <th class="p-2 border-b text-center">कृती</th>
+              <th class="p-2 border-b">पालकांचा संपर्क</th>
+              <th class="p-2 border-b text-center">कृती (Actions)</th>
             </tr>
           </thead>
           <tbody id="rosterTableBody" class="divide-y divide-gray-200">
@@ -199,351 +181,493 @@
 
       <div class="flex flex-wrap justify-between items-center gap-2 mt-4 pt-3 border-t">
         <div class="flex gap-2 text-xs">
-          <button onclick="exportAllDataJSON()" class="bg-slate-700 hover:bg-slate-800 text-white px-3 py-1.5 rounded font-medium">📥 बॅकअप (JSON)</button>
+          <button type="button" onclick="exportAllDataJSON()" class="bg-slate-700 hover:bg-slate-800 text-white px-3 py-1.5 rounded font-medium">
+            📥 डेटा बॅकअप (JSON)
+          </button>
           <label class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-3 py-1.5 rounded font-medium cursor-pointer">
             📤 डेटा लोड करा
             <input type="file" accept=".json" class="hidden" onchange="importDataJSON(event)">
           </label>
         </div>
         <div class="flex gap-2 text-xs">
-          <button onclick="addNewStudent(); closeRosterModal();" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded font-bold">➕ नवीन जोडा</button>
-          <button onclick="closeRosterModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-3 py-1.5 rounded font-medium">बंद करा</button>
+          <button type="button" onclick="addNewStudent(); closeRosterModal();" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded font-bold">
+            ➕ नवीन विद्यार्थी जोडा
+          </button>
+          <button type="button" onclick="closeRosterModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-3 py-1.5 rounded font-medium">
+            बंद करा
+          </button>
         </div>
       </div>
     </div>
   </div>
 
-  <main class="max-w-5xl mx-auto my-6 px-3" id="printableCardContainer">
+  <!-- Notification Toast -->
+  <div id="saveToast" class="no-print hidden fixed bottom-4 right-4 bg-slate-900 text-white px-4 py-2.5 rounded-lg shadow-2xl text-xs z-50 flex items-center gap-2 border border-slate-700">
+    <span class="text-emerald-400 font-bold text-sm">✓</span> <span id="toastMsg">माहिती यशस्वीरीत्या सेव्ह केली आहे.</span>
+  </div>
 
-    <!-- PAGE 1: मुखपृष्ठ, सर्वसाधारण माहिती, वार्षिक उपस्थिती व मी आणि माझा परिसर -->
-    <div class="a4-print-page bg-white rounded-xl shadow-md border-2 border-amber-500 p-5 md:p-7 mb-8">
-      <div class="text-center border-b-2 border-amber-300 pb-3 mb-4">
-        <div class="flex justify-between items-center text-xs font-semibold text-gray-600 mb-1">
-          <span>सत्यमेव जयते | शिक्षा मंत्रालय</span>
-          <span class="bg-amber-100 text-amber-900 px-3 py-0.5 rounded-full border border-amber-300">NCERT • PARAKH • STARS Project</span>
-          <span>NEP 2020 • NCF-SE</span>
+  <div class="max-w-5xl mx-auto my-6 px-3" id="printableCardContainer">
+
+    <!-- PAGE 1: मुखपृष्ठ व संस्था माहिती -->
+    <div class="print-page bg-white rounded-xl shadow-md border-4 border-orange-500 p-6 md:p-8 mb-8">
+      <div class="text-center border-b-2 border-orange-200 pb-5">
+        <div class="flex justify-between items-center text-xs md:text-sm font-semibold text-gray-600 mb-2">
+          <span>विद्ययाऽमृतमश्नुते</span>
+          <span class="bg-orange-100 text-orange-800 px-3 py-0.5 rounded-full border border-orange-300">पथदर्शी प्रकल्प: 'STARS' प्रकल्पांतर्गत</span>
+          <span>NCERT • PARAKH</span>
         </div>
-        <h1 class="text-2xl md:text-3xl font-extrabold text-amber-800 mt-1">HOLISTIC PROGRESS CARD (HPC)</h1>
-        <h2 class="text-base md:text-lg font-bold text-gray-800">समग्र प्रगतिपत्रक - प्रारंभिक स्तर (PREPARATORY STAGE : इयत्ता ३ री ते ५ वी)</h2>
-      </div>
-
-      <div class="border border-amber-200 rounded-lg p-3 bg-amber-50/30 mb-4">
-        <div class="flex justify-between items-center border-b border-amber-200 pb-1 mb-2">
-          <h3 class="font-bold text-amber-900 text-xs md:text-sm">PART-A (1) : सर्वसाधारण माहिती (General Information)</h3>
-          <span class="text-[11px] text-gray-500">(शिक्षकांनी पालकांशी चर्चा करून भरावे)</span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5 text-xs">
-          <div class="md:col-span-2">
-            <label class="font-semibold block text-gray-600">शाळेचे नाव व पत्ता (School Name & Address):</label>
-            <input type="text" id="schoolName" class="w-full font-medium" placeholder="शाळेचे नाव...">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">युडायस+ कोड (UDISE+ Code):</label>
-            <input type="text" id="udiseCode" class="w-full" placeholder="उदा. 27240800101">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">पिन कोड (Pin Code):</label>
-            <input type="text" id="pinCode" class="w-full" placeholder="उदा. 411030">
-          </div>
-
-          <div class="md:col-span-2">
-            <label class="font-semibold block text-gray-600">विद्यार्थ्याचे संपूर्ण नाव (Student Name):</label>
-            <input type="text" id="studentName" oninput="syncStudentNameInUI()" class="w-full font-bold text-gray-900" placeholder="पूर्ण नाव">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">हजेरी क्र. (Roll No.):</label>
-            <input type="text" id="rollNo" class="w-full font-bold" placeholder="उदा. ०१">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">इयत्ता (Grade):</label>
-            <select id="grade" class="w-full font-semibold">
-              <option value="इयत्ता ३ री (Grade 3)">इयत्ता ३ री (Grade 3)</option>
-              <option value="इयत्ता ४ थी (Grade 4)">इयत्ता ४ थी (Grade 4)</option>
-              <option value="इयत्ता ५ वी (Grade 5)">इयत्ता ५ वी (Grade 5)</option>
-            </select>
-          </div>
-
-          <div>
-            <label class="font-semibold block text-gray-600">अपार आय.डी. (APAAR ID):</label>
-            <input type="text" id="apaarId" class="w-full" placeholder="१२ अंकी आय.डी.">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">जन्म दिनांक (DOB):</label>
-            <input type="date" id="dob" class="w-full">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">लिंग (Gender):</label>
-            <select id="gender" class="w-full">
-              <option value="मुलगा">मुलगा (Boy)</option>
-              <option value="मुलगी">मुलगी (Girl)</option>
-              <option value="इतर">इतर (Other)</option>
-            </select>
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-600">तुकडी (Section):</label>
-            <input type="text" id="section" class="w-full" placeholder="उदा. अ">
-          </div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-orange-700 mt-2">महाराष्ट्र शासन</h2>
+        <h3 class="text-lg md:text-xl font-bold text-gray-800">राज्य शैक्षणिक संशोधन व प्रशिक्षण परिषद, महाराष्ट्र, पुणे</h3>
+        <div class="my-4 inline-block bg-gradient-to-r from-orange-500 via-amber-500 to-orange-500 text-white px-8 py-2 rounded-full shadow-md">
+          <h1 class="text-2xl md:text-4xl font-extrabold tracking-wide">समग्र प्रगतिपत्रक (HPC)</h1>
+          <p class="text-sm md:text-base font-semibold tracking-wider">पायाभूत स्तर (Foundational Stage : बालवाटिका ते इयत्ता २री)</p>
         </div>
       </div>
 
-      <div class="mb-4">
-        <h3 class="font-bold text-gray-800 text-xs mb-1.5 flex items-center justify-between">
-          <span>📅 उपस्थिती तपशील (माहे एप्रिल ते मार्च - Attendance Record):</span>
-          <span class="text-[11px] font-normal text-amber-800">वार्षिक सरासरी: <strong id="attSummaryBadge">95.2%</strong></span>
-        </h3>
-        <div class="overflow-x-auto">
-          <table class="min-w-full text-[11px] border border-gray-300 text-center">
-            <thead class="bg-amber-100 font-bold text-gray-800">
-              <tr>
-                <th class="border border-gray-300 p-1 text-left w-32">महिने</th>
-                <th class="border border-gray-300 p-0.5">एप्रि</th>
-                <th class="border border-gray-300 p-0.5">मे</th>
-                <th class="border border-gray-300 p-0.5">जून</th>
-                <th class="border border-gray-300 p-0.5">जुलै</th>
-                <th class="border border-gray-300 p-0.5">ऑग</th>
-                <th class="border border-gray-300 p-0.5">सप्टें</th>
-                <th class="border border-gray-300 p-0.5">ऑक्टो</th>
-                <th class="border border-gray-300 p-0.5">नोव्हें</th>
-                <th class="border border-gray-300 p-0.5">डिसें</th>
-                <th class="border border-gray-300 p-0.5">जाने</th>
-                <th class="border border-gray-300 p-0.5">फेब्रु</th>
-                <th class="border border-gray-300 p-0.5">मार्च</th>
-                <th class="border border-gray-300 p-0.5 bg-amber-200">एकूण</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">कामाचे दिवस</td>
-                <!-- 12 months for school days -->
-                <script>
-                  for(let i=0; i<12; i++) {
-                    document.write(`<td class="border border-gray-300 p-0.5"><input type="number" id="sch_day_${i}" class="w-10 text-center p-0.5 sch-days" oninput="calculatePreparatoryAttendance()"></td>`);
-                  }
-                </script>
-                <td class="border border-gray-300 p-1 font-bold bg-amber-50" id="totSchDays">238</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थित दिवस</td>
-                <!-- 12 months for present days -->
-                <script>
-                  for(let i=0; i<12; i++) {
-                    document.write(`<td class="border border-gray-300 p-0.5"><input type="number" id="pre_day_${i}" class="w-10 text-center p-0.5 pre-days" oninput="calculatePreparatoryAttendance()"></td>`);
-                  }
-                </script>
-                <td class="border border-gray-300 p-1 font-bold bg-amber-50" id="totPreDays">226</td>
-              </tr>
-              <tr class="font-bold bg-amber-50/40">
-                <td class="border border-gray-300 p-1 text-left">हजेरी (% मध्ये)</td>
-                <script>
-                  for(let i=0; i<12; i++) {
-                    document.write(`<td class="border border-gray-300 p-0.5" id="att_rate_${i}">-</td>`);
-                  }
-                </script>
-                <td class="border border-gray-300 p-1 text-amber-900 font-extrabold" id="totAttRate">95%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- प्रेरक विचार पट्टी -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 my-5 text-xs bg-amber-50 p-4 rounded-lg border border-amber-200">
+        <div class="italic">"परीक्षा म्हणजे स्वतःच्या आत डोकावून पाहण्याची संधी." — <span class="font-bold">डॉ. ए.पी.जे. अब्दुल कलाम</span></div>
+        <div class="italic">"शरीराला श्रमाकडे, बुद्धीला मनाकडे आणि हृदयाला भावनेकडे वळविणे म्हणजे शिक्षण होय." — <span class="font-bold">विनोबा भावे</span></div>
+        <div class="italic">"असाध्य ते साध्य । करिता सायास ।। कारण अभ्यास । तुका म्हणे ।।" — <span class="font-bold">संत तुकाराम</span></div>
+        <div class="italic">"बालकाचा सर्वांगीण विकास हेच शिक्षणाचे खरे ध्येय आहे." — <span class="font-bold">महात्मा गांधी</span></div>
       </div>
 
-      <div class="border border-emerald-300 rounded-lg p-3 bg-emerald-50/20 mb-3">
-        <h3 class="font-bold text-emerald-900 text-xs md:text-sm border-b border-emerald-200 pb-1 mb-2">
-          PART-A (2) : मी आणि माझे भावविश्व (Things About Me)
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs">
-          <div>
-            <label class="font-semibold block text-gray-700">मला करायला आवडते (I like to):</label>
-            <input type="text" id="likeTo" class="w-full" placeholder="उदा. पुस्तके वाचणे, चित्र काढणे">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-700">माझे आवडते खेळ (Favourite Games):</label>
-            <input type="text" id="favGames" class="w-full" placeholder="उदा. खो-खो, बुद्धिबळ">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-700">माझे आवडते खाद्यपदार्थ (Favourite Food):</label>
-            <input type="text" id="favFood" class="w-full" placeholder="उदा. पुरणपोळी, डाळ-भात">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-700">माझ्यातील उत्तम कौशल्य (Good at):</label>
-            <input type="text" id="goodAt" class="w-full" placeholder="उदा. सुंदर हस्ताक्षर, गणिती कोडी">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-700">सुधारणा हवी असलेली कौशल्ये (Improve at):</label>
-            <input type="text" id="improveAt" class="w-full" placeholder="उदा. इंग्रजी संभाषण, वक्तृत्व">
-          </div>
-          <div>
-            <label class="font-semibold block text-gray-700">माझा आदर्श व्यक्ती (My Idol):</label>
-            <input type="text" id="myIdol" class="w-full font-bold text-amber-900" placeholder="उदा. डॉ. ए.पी.जे. अब्दुल कलाम">
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-        <div class="border border-sky-300 rounded-lg p-3 bg-sky-50/20">
-          <h4 class="font-bold text-sky-900 border-b border-sky-200 pb-1 mb-1.5">
-            PART-A (3) : शाळेत मला कसे वाटते? (How do I feel at school?)
-          </h4>
-          <div class="space-y-1.5">
-            <div class="flex justify-between items-center">
-              <span>१. माझ्या भावना (आनंद/राग) सांगू शकतो:</span>
-              <select id="feel_q1" class="text-xs p-1"><option>Yes (होय)</option><option>Sometimes (कधीकधी)</option><option>No (नाही)</option></select>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>२. कठीण प्रसंगात स्वतःला शांत ठेवतो:</span>
-              <select id="feel_q2" class="text-xs p-1"><option>Yes (होय)</option><option>Sometimes (कधीकधी)</option><option>No (नाही)</option></select>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>३. मित्रांच्या मतांचा व भावनांचा आदर करतो:</span>
-              <select id="feel_q3" class="text-xs p-1"><option>Yes (होय)</option><option>Sometimes (कधीकधी)</option><option>No (नाही)</option></select>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>४. मित्रांना भांडणानंतर समेट घडवण्यास मदत करतो:</span>
-              <select id="feel_q4" class="text-xs p-1"><option>Yes (होय)</option><option>Sometimes (कधीकधी)</option><option>No (नाही)</option></select>
-            </div>
-          </div>
-        </div>
-
-        <div class="border border-indigo-300 rounded-lg p-3 bg-indigo-50/20">
-          <h4 class="font-bold text-indigo-900 border-b border-indigo-200 pb-1 mb-1.5">
-            सहाध्यायी व पालक अभिप्राय (Peer & Parent Feedback)
-          </h4>
-          <div class="space-y-1.5">
+      <!-- प्राविण्य स्तर संकल्पना स्पष्टीकरण -->
+      <div class="bg-sky-50 border border-sky-300 rounded-lg p-4 my-4">
+        <h4 class="font-bold text-sky-900 text-sm md:text-base mb-2 flex items-center gap-2">
+          <span>🏔️ प्राविण्य स्तर संकल्पना (Three Proficiency Levels):</span>
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs md:text-sm">
+          <div class="bg-white p-2.5 rounded border border-blue-200 shadow-sm flex items-start gap-2">
+            <span class="w-4 h-4 mt-0.5 rounded-full bg-blue-500 shrink-0"></span>
             <div>
-              <label class="font-semibold block text-gray-700">सहाध्यायी मित्राचे नाव (Peer's Name):</label>
-              <input type="text" id="peerName" class="w-full text-xs" placeholder="मित्राचे नाव">
+              <span class="font-bold text-blue-800">१. निर्झर (प्रारंभिक स्तर):</span>
+              <p class="text-gray-600 text-xs mt-0.5">बालक शिक्षकांच्या किंवा मित्रांच्या मदतीने कृती करत आहे. क्षमतांचा पाया रचला जात आहे.</p>
             </div>
-            <div class="flex justify-between items-center">
-              <span>सहाध्यायी मत (मित्रांना नेहमी मदत करतो):</span>
-              <select id="peerHelp" class="text-xs p-1"><option>Yes (होय)</option><option>Sometimes (कधीकधी)</option></select>
-            </div>
+          </div>
+          <div class="bg-white p-2.5 rounded border border-green-200 shadow-sm flex items-start gap-2">
+            <span class="w-4 h-4 mt-0.5 rounded-full bg-green-500 shrink-0"></span>
             <div>
-              <label class="font-semibold block text-gray-700">पालकांचा गुणात्मक अभिप्राय (Caregiver's Note):</label>
-              <input type="text" id="parentNote" class="w-full text-xs" placeholder="घरातील स्वाध्याय, वाचन व सहभाग...">
+              <span class="font-bold text-green-800">२. पर्वत (मध्यम/प्रगती स्तर):</span>
+              <p class="text-gray-600 text-xs mt-0.5">बालक बहुतांश कृती स्वतःहून करते; काही ठिकाणी अल्प मार्गदर्शनाची गरज असते.</p>
+            </div>
+          </div>
+          <div class="bg-white p-2.5 rounded border border-purple-200 shadow-sm flex items-start gap-2">
+            <span class="w-4 h-4 mt-0.5 rounded-full bg-purple-500 shrink-0"></span>
+            <div>
+              <span class="font-bold text-purple-800">३. आकाश (उत्कृष्ट/प्रवीण स्तर):</span>
+              <p class="text-gray-600 text-xs mt-0.5">बालक संपूर्णपणे स्वतंत्रपणे व सर्जनशीलपणे विविध संदर्भात क्षमतेचा वापर करते.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="a4-print-page bg-white rounded-xl shadow-md border-2 border-indigo-500 p-5 md:p-7 mb-8">
-      <div class="border-b-2 border-indigo-600 pb-2 mb-4 flex justify-between items-center">
+    <!-- PAGE 2: भाग अ (१) सर्वसाधारण माहिती & उपस्थिती -->
+    <div class="print-page bg-white rounded-xl shadow-md border-2 border-orange-400 p-6 mb-8">
+      <div class="border-b-2 border-orange-500 pb-2 mb-4 flex justify-between items-center">
+        <h2 class="text-xl font-bold text-orange-800">भाग अ (१) : सर्वसाधारण माहिती</h2>
+        <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded font-medium">(पालकांशी चर्चा करून शिक्षकांनी भरावे)</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <div class="md:col-span-2 space-y-3">
+          <div>
+            <label class="font-semibold block text-xs text-gray-600">शाळेचे नाव व पत्ता :</label>
+            <input type="text" id="schoolName" class="w-full font-medium" placeholder="उदा. जि.प. प्राथमिक शाळा...">
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label class="font-semibold block text-xs text-gray-600">युडायस नंबर (UDISE Code) :</label>
+              <input type="text" id="udiseNo" class="w-full" placeholder="उदा. 27240800101">
+            </div>
+            <div>
+              <label class="font-semibold block text-xs text-gray-600">पिन कोड :</label>
+              <input type="text" id="pinCode" class="w-full" placeholder="उदा. 411030">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div>
+              <label class="font-semibold block text-xs text-gray-600">अपार आय.डी. (APAAR ID) :</label>
+              <input type="text" id="apaarId" class="w-full" placeholder="१२ अंकी आय.डी.">
+            </div>
+            <div>
+              <label class="font-semibold block text-xs text-gray-600">सरल आय. डी. (SARAL ID) :</label>
+              <input type="text" id="saralId" class="w-full" placeholder="सरल नंबर">
+            </div>
+            <div>
+              <label class="font-semibold block text-xs text-gray-600">अंगणवाडी / शिक्षक आय.डी. :</label>
+              <input type="text" id="teacherId" class="w-full" placeholder="शिक्षक आय.डी.">
+            </div>
+          </div>
+        </div>
+
+        <!-- विद्यार्थी फोटो बॉक्स -->
+        <div class="flex flex-col items-center justify-center p-3 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 text-center">
+          <div class="w-28 h-32 border border-gray-400 bg-white flex items-center justify-center text-xs text-gray-400 rounded mb-2 overflow-hidden" id="photoPreview">
+            विद्यार्थ्यांचा फोटो
+          </div>
+          <label class="no-print text-xs bg-orange-600 hover:bg-orange-700 text-white px-2.5 py-1 rounded cursor-pointer font-medium">
+            फोटो निवडा
+            <input type="file" accept="image/*" class="hidden" onchange="previewImage(event)">
+          </label>
+        </div>
+      </div>
+
+      <!-- विद्यार्थी तपशील -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 text-sm bg-orange-50/50 p-4 rounded-lg border border-orange-200">
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">विद्यार्थ्याचे नाव :</label>
+          <input type="text" id="studentName" oninput="syncStudentNameInUI()" class="w-full font-bold text-gray-900 bg-white" placeholder="पूर्ण नाव">
+        </div>
         <div>
-          <h2 class="text-lg md:text-xl font-bold text-indigo-950">PART-B : आकारिक मूल्यांकन आराखडा (Formative Assessment Framework)</h2>
-          <p class="text-xs text-gray-600">३ मुख्य क्षमता स्तर: आरंभी (Beginner) • प्रवीण (Proficient) • प्रगत (Advanced)</p>
+          <label class="font-semibold block text-xs text-gray-600">हजेरी क्र. (Roll No.) :</label>
+          <input type="text" id="rollNo" class="w-full font-bold" placeholder="उदा. ०१">
         </div>
-        <span class="text-xs bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded font-bold">कक्षा ३ ते ५</span>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">जन्म दिनांक :</label>
+          <input type="date" id="dob" class="w-full">
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">इयत्ता निवडा :</label>
+          <div class="flex flex-wrap gap-2 text-xs pt-1">
+            <label class="flex items-center gap-1 bg-white px-2 py-1 rounded border"><input type="radio" name="grade" value="बालवाटिका १"> बालवाटिका १</label>
+            <label class="flex items-center gap-1 bg-white px-2 py-1 rounded border"><input type="radio" name="grade" value="बालवाटिका २"> बालवाटिका २</label>
+            <label class="flex items-center gap-1 bg-white px-2 py-1 rounded border"><input type="radio" name="grade" value="बालवाटिका ३"> बालवाटिका ३</label>
+            <label class="flex items-center gap-1 bg-white px-2 py-1 rounded border"><input type="radio" name="grade" value="इ. पहिली"> इ. पहिली</label>
+            <label class="flex items-center gap-1 bg-white px-2 py-1 rounded border"><input type="radio" name="grade" value="इ. दुसरी"> इ. दुसरी</label>
+          </div>
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">तुकडी :</label>
+          <input type="text" id="section" class="w-full" placeholder="उदा. अ / ब">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">परिसर प्रकार :</label>
+          <select id="areaType" class="w-full">
+            <option value="ग्रामीण">ग्रामीण</option>
+            <option value="शहरी">शहरी</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">मातृभाषा :</label>
+          <input type="text" id="motherTongue" class="w-full" placeholder="उदा. मराठी">
+        </div>
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">शिक्षणाचे माध्यम :</label>
+          <input type="text" id="medium" class="w-full" placeholder="उदा. मराठी / सेमी-इंग्रजी">
+        </div>
+
+        <div class="md:col-span-4">
+          <label class="font-semibold block text-xs text-gray-600">विद्यार्थ्याचा पत्ता :</label>
+          <input type="text" id="studentAddress" class="w-full" placeholder="घराचा संपूर्ण पत्ता">
+        </div>
+
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">वजन (कि.ग्रॅ.) :</label>
+          <input type="text" id="weight" class="w-full" placeholder="उदा. 18 kg">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">उंची (सें.मी.) :</label>
+          <input type="text" id="height" class="w-full" placeholder="उदा. 108 cm">
+        </div>
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">भ्रमणध्वनी (मोबाइल क्र.) :</label>
+          <input type="text" id="mobile" class="w-full" placeholder="उदा. 98xxxxxxxx">
+        </div>
+
+        <!-- पालक माहिती -->
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">आईचे / पालकांचे नाव :</label>
+          <input type="text" id="motherName" class="w-full" placeholder="आईचे नाव">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">आईचे शिक्षण :</label>
+          <input type="text" id="motherEdu" class="w-full">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">आईचा व्यवसाय :</label>
+          <input type="text" id="motherOcc" class="w-full">
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">वडिलांचे / पालकांचे नाव :</label>
+          <input type="text" id="fatherName" class="w-full" placeholder="वडिलांचे नाव">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">वडिलांचे शिक्षण :</label>
+          <input type="text" id="fatherEdu" class="w-full">
+        </div>
+        <div>
+          <label class="font-semibold block text-xs text-gray-600">वडिलांचा व्यवसाय :</label>
+          <input type="text" id="fatherOcc" class="w-full">
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">भावंडांची संख्या :</label>
+          <input type="text" id="siblingsCount" class="w-full" placeholder="भाऊ / बहीण संख्या">
+        </div>
+        <div class="md:col-span-2">
+          <label class="font-semibold block text-xs text-gray-600">भावंडांचे वय :</label>
+          <input type="text" id="siblingsAge" class="w-full" placeholder="उदा. ५ वर्षे, ८ वर्षे">
+        </div>
       </div>
 
-      <!-- 6 Curricular Domains Container -->
-      <div class="space-y-3.5 text-xs" id="curricularDomainsRoot">
-        <!-- Rendered dynamically via JS for 6 subject areas -->
-      </div>
-    </div>
-
-    <div class="a4-print-page bg-white rounded-xl shadow-md border-2 border-emerald-500 p-5 md:p-7 mb-8">
-      <div class="border-b-2 border-emerald-600 pb-2 mb-4">
-        <h2 class="text-lg md:text-xl font-bold text-emerald-950">PART-C : शैक्षणिक वर्षाचा सारांश (Annual Qualitative Summary)</h2>
-        <p class="text-xs text-gray-600">विद्यार्थ्यांची प्रमुख कामगिरी, बलस्थाने आणि सुधारात्मक बाबींवर आधारित शिक्षकांचे अंतिम गुणात्मक अभिप्राय</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs mb-5">
-        <div class="border border-emerald-200 p-2.5 rounded bg-emerald-50/20">
-          <label class="font-bold block text-emerald-900 mb-1">१. भाषा शिक्षण १ व २ (Languages R1 & R2):</label>
-          <textarea id="sum_lang" rows="2" class="w-full text-xs" placeholder="वाचन, लेखन व शब्दसंपत्तीतील प्रगती..."></textarea>
-        </div>
-        <div class="border border-emerald-200 p-2.5 rounded bg-emerald-50/20">
-          <label class="font-bold block text-emerald-900 mb-1">२. गणित शिक्षण (Mathematics Education):</label>
-          <textarea id="sum_math" rows="2" class="w-full text-xs" placeholder="संख्याज्ञान, मूलभूत क्रिया व तार्किक विचार..."></textarea>
-        </div>
-        <div class="border border-emerald-200 p-2.5 rounded bg-emerald-50/20">
-          <label class="font-bold block text-emerald-900 mb-1">३. परिसर अभ्यास (The World Around Us / EVS):</label>
-          <textarea id="sum_evs" rows="2" class="w-full text-xs" placeholder="पर्यावरणीय जाणीव, निरीक्षण व कृतज्ञता भाव..."></textarea>
-        </div>
-        <div class="border border-emerald-200 p-2.5 rounded bg-emerald-50/20">
-          <label class="font-bold block text-emerald-900 mb-1">४. कला व शारीरिक शिक्षण (Art & Physical Education):</label>
-          <textarea id="sum_artpe" rows="2" class="w-full text-xs" placeholder="सर्जनशीलता, खेळ आणि आरोग्यदायी सवयी..."></textarea>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-300 pt-4 mb-6">
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="font-bold text-gray-900 text-xs md:text-sm">PART-D : NCrF अंतर्गत संपादित क्रेडिट्स (Credits Earned through HPC)</h3>
-          <span class="text-[11px] text-gray-500">NCF-SE मार्गदर्शक तत्त्वानुसार</span>
-        </div>
-
+      <!-- वार्षिक उपस्थिती तक्ता -->
+      <div class="mt-6">
+        <h3 class="font-bold text-gray-800 text-sm mb-2 flex items-center gap-1">
+          <span>📅 उपस्थिती तपशील (माहे जून ते मे):</span>
+        </h3>
         <div class="overflow-x-auto">
           <table class="min-w-full text-xs border border-gray-300 text-center">
-            <thead class="bg-emerald-100 font-bold text-emerald-950">
+            <thead class="bg-orange-100 font-bold text-gray-800">
               <tr>
-                <th class="border border-gray-300 p-1.5 text-left w-12">क्र.</th>
-                <th class="border border-gray-300 p-1.5 text-left">अध्ययन क्षेत्र (Curricular Area)</th>
-                <th class="border border-gray-300 p-1.5">HPC क्रेडिट (७०%)</th>
-                <th class="border border-gray-300 p-1.5">NCrF स्तर</th>
-                <th class="border border-gray-300 p-1.5">कमाल क्रेडिट गुण</th>
-                <th class="border border-gray-300 p-1.5 bg-emerald-200">संपादित क्रेडिट गुण</th>
+                <th class="border border-gray-300 p-1.5 text-left w-36">महिने</th>
+                <th class="border border-gray-300 p-1">जून</th>
+                <th class="border border-gray-300 p-1">जुलै</th>
+                <th class="border border-gray-300 p-1">ऑगस्ट</th>
+                <th class="border border-gray-300 p-1">सप्टें.</th>
+                <th class="border border-gray-300 p-1">ऑक्टो.</th>
+                <th class="border border-gray-300 p-1">नोव्हें.</th>
+                <th class="border border-gray-300 p-1">डिसें.</th>
+                <th class="border border-gray-300 p-1">जाने.</th>
+                <th class="border border-gray-300 p-1">फेब्रु.</th>
+                <th class="border border-gray-300 p-1">मार्च</th>
+                <th class="border border-gray-300 p-1">एप्रिल</th>
+                <th class="border border-gray-300 p-1">मे</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="border border-gray-300 p-1">१</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">भाषा शिक्षण १ (R1)</td>
-                <td class="border border-gray-300 p-1">4.2</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">2.52</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_1" value="2.52" oninput="calcTotalCredits()"></td>
+              <tr id="rowWorkDays">
+                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">कामाचे दिवस</td>
               </tr>
-              <tr>
-                <td class="border border-gray-300 p-1">२</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">भाषा शिक्षण २ (R2)</td>
-                <td class="border border-gray-300 p-1">4.4</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">2.64</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_2" value="2.64" oninput="calcTotalCredits()"></td>
+              <tr id="rowPresDays">
+                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थित दिवस</td>
               </tr>
-              <tr>
-                <td class="border border-gray-300 p-1">३</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">गणित शिक्षण (Mathematics)</td>
-                <td class="border border-gray-300 p-1">4.3</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">2.58</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_3" value="2.50" oninput="calcTotalCredits()"></td>
+              <tr id="rowAttPerc">
+                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थिती (% मध्ये)</td>
               </tr>
-              <tr>
-                <td class="border border-gray-300 p-1">४</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">परिसर अभ्यास (The World Around Us)</td>
-                <td class="border border-gray-300 p-1">4.6</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">2.76</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_4" value="2.76" oninput="calcTotalCredits()"></td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-1">५</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">कला शिक्षण (Art Education)</td>
-                <td class="border border-gray-300 p-1">2.3</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">1.38</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_5" value="1.38" oninput="calcTotalCredits()"></td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-1">६</td>
-                <td class="border border-gray-300 p-1 text-left font-semibold">शारीरिक शिक्षण व आरोग्य (Physical Education)</td>
-                <td class="border border-gray-300 p-1">2.3</td>
-                <td class="border border-gray-300 p-1">0.6</td>
-                <td class="border border-gray-300 p-1">1.38</td>
-                <td class="border border-gray-300 p-1"><input type="number" step="0.01" class="credit-input w-16 text-center font-bold" id="cr_6" value="1.38" oninput="calcTotalCredits()"></td>
-              </tr>
-              <tr class="bg-amber-100 font-bold text-gray-900">
-                <td colspan="4" class="border border-gray-300 p-1 text-right">एकूण क्रेडिट पॉईंट्स (Total Earned Credits):</td>
-                <td class="border border-gray-300 p-1">13.26</td>
-                <td class="border border-gray-300 p-1 text-amber-900 text-sm" id="totCreditsSum">13.18</td>
+              <tr id="rowAttReason">
+                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50 text-[10px]">कमी असल्यास कारणे</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+    </div>
 
-      <div class="grid grid-cols-3 gap-4 pt-6 mt-4 border-t border-gray-300 text-center text-xs font-semibold text-gray-700">
+    <!-- PAGE 3: भाग अ (२) मी व माझा परिसर -->
+    <div class="print-page bg-white rounded-xl shadow-md border-2 border-emerald-400 p-6 mb-8">
+      <div class="border-b-2 border-emerald-500 pb-2 mb-4 flex justify-between items-center">
+        <h2 class="text-xl font-bold text-emerald-800">भाग अ (२) : मी व माझा परिसर</h2>
+        <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-1 rounded font-medium">बालकांची वैयक्तिक आवड व सवय</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <div class="space-y-3 bg-emerald-50/50 p-4 rounded-lg border border-emerald-200">
+          <div class="flex items-center gap-2">
+            <span class="font-semibold text-xs text-gray-700">माझे वय:</span>
+            <input type="text" id="myAge" class="w-20 text-center" placeholder="उदा. ६">
+            <span class="text-xs">वर्षे आहे.</span>
+          </div>
+          <div>
+            <label class="font-semibold block text-xs text-gray-700">माझा वाढदिवस:</label>
+            <input type="text" id="myBday" class="w-full" placeholder="उदा. १५ ऑगस्ट">
+          </div>
+          <div>
+            <label class="font-semibold block text-xs text-gray-700">माझे कुटुंब (माहिती/वर्णन):</label>
+            <textarea id="myFamily" rows="2" class="w-full text-xs" placeholder="माझ्या घरात आई, बाबा, आजी, आजोबा व मी राहतो..."></textarea>
+          </div>
+          <div>
+            <label class="font-semibold block text-xs text-gray-700">मोठे होऊन मला व्हायचे आहे:</label>
+            <input type="text" id="myAmbition" class="w-full font-semibold text-emerald-900" placeholder="उदा. शिक्षक / डॉक्टर / शास्त्रज्ञ / खेळाडू">
+          </div>
+          <div>
+            <label class="font-semibold block text-xs text-gray-700">हे माझे मित्र / मैत्रिणी आहेत:</label>
+            <textarea id="myFriends" rows="2" class="w-full text-xs" placeholder="मित्रांची नावे"></textarea>
+          </div>
+        </div>
+
+        <div class="space-y-2 bg-amber-50/50 p-4 rounded-lg border border-amber-200">
+          <h3 class="font-bold text-amber-900 text-sm border-b border-amber-300 pb-1">⭐ माझा आवडता / आवडती:</h3>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">🎨 रंग:</span>
+            <input type="text" id="favColor" class="w-36" placeholder="उदा. निळा">
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">🌺 फूल:</span>
+            <input type="text" id="favFlower" class="w-36" placeholder="उदा. गुलाब">
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">🍲 अन्नपदार्थ:</span>
+            <input type="text" id="favFood" class="w-36" placeholder="उदा. पुरणपोळी">
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">⚽ खेळ:</span>
+            <input type="text" id="favSport" class="w-36" placeholder="उदा. लपंडाव">
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">🐘 प्राणी:</span>
+            <input type="text" id="favAnimal" class="w-36" placeholder="उदा. कुत्रा / हत्ती">
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-semibold">📖 विषय:</span>
+            <input type="text" id="favSubject" class="w-36" placeholder="उदा. गणित / भाषा / चित्रकला">
+          </div>
+        </div>
+
+        <div class="space-y-3 bg-indigo-50/50 p-4 rounded-lg border border-indigo-200">
+          <h3 class="font-bold text-indigo-900 text-sm border-b border-indigo-300 pb-1">🎯 माझी आवड आहे (टिक करा):</h3>
+          <div class="grid grid-cols-2 gap-1.5 text-xs">
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_read"> वाचन</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_dance"> नृत्य</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_sing"> गायन</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_music"> वादन</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_sports"> क्रीडा/खेळ</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_write"> सर्जनशील लेखन</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_garden"> बागकाम</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_yoga"> योगाभ्यास</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_art"> कला</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_craft"> हस्तकला</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_cook"> पाककला</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" id="hobby_other"> इतर</label>
+          </div>
+          <div class="mt-2">
+            <label class="font-semibold block text-xs text-gray-700">घरातील खालील कामे नियमित करतो/करते:</label>
+            <textarea id="homeChores" rows="2" class="w-full text-xs" placeholder="उदा. स्वतःची दप्तर भरणे, पाणी देणे, झाडांना पाणी घालणे..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DYNAMIC DOMAINS 1 to 5.1 CONTAINER -->
+    <div id="domainsContainer" class="space-y-8"></div>
+
+    <!-- PAGE: भाग क शैक्षणिक वर्षाचा सारांश -->
+    <div class="print-page bg-white rounded-xl shadow-md border-2 border-purple-500 p-6 mb-8">
+      <div class="border-b-2 border-purple-600 pb-2 mb-4">
+        <h2 class="text-xl font-bold text-purple-900">भाग क : शैक्षणिक वर्षाचा सारांश</h2>
+        <p class="text-xs text-gray-600">प्रमुख कामगिरी वर्णन विधाने (बालकांच्या क्षमतेनुसार शिक्षकांचे गुणात्मक अभिप्राय - Qualitative Remarks)</p>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">१) शारीरिक विकास</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_1" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_1" rows="2" class="w-full text-xs" placeholder="बलस्थाने, संपादन व सुधारात्मक बाबींवर आधारित अभिप्राय..."></textarea>
+        </div>
+
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">२) सामाजिक, भावनिक व नैतिक विकास</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_2" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_2" rows="2" class="w-full text-xs" placeholder="मित्रत्वाची भावना, सहकार्य, संवेदनशीलता यावरील अभिप्राय..."></textarea>
+        </div>
+
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">३) बोधात्मक विकास (गणितीय व तार्किक समज)</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_3" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_3" rows="2" class="w-full text-xs" placeholder="आकार, संख्या संकल्पना, वर्गीकरण व तार्किक विचारावर अभिप्राय..."></textarea>
+        </div>
+
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">४) भाषा आणि साक्षरता विकास</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_4" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_4" rows="2" class="w-full text-xs" placeholder="श्रवण, भाषण, वाचन व लेखन क्षमतांवरील गुणात्मक नोंद..."></textarea>
+        </div>
+
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">५) सौंदर्यदृष्टी आणि सांस्कृतिक विकास</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_5" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_5" rows="2" class="w-full text-xs" placeholder="चित्रकला, संगीत, अभिनय व हस्तकलेतील अभिव्यक्तीची नोंद..."></textarea>
+        </div>
+
+        <div class="border border-purple-200 rounded-lg p-3 bg-purple-50/30">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="font-bold text-purple-900 text-sm">५.१) सकारात्मक अध्ययन सवयी</span>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-semibold text-gray-600">अंतिम प्राविण्य स्तर:</span>
+              <select id="summary_level_5_1" class="text-xs font-bold text-purple-700">
+                <option value="निर्झर">१. निर्झर</option>
+                <option value="पर्वत">२. पर्वत</option>
+                <option value="आकाश">३. आकाश</option>
+              </select>
+            </div>
+          </div>
+          <textarea id="summary_text_5_1" rows="2" class="w-full text-xs" placeholder="जिज्ञासा, सहभाग, एकाग्रता व सातत्य यावर गुणात्मक नोंद..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: माझ्या नोंदी (Student Reflection) & Signatures -->
+    <div class="print-page bg-white rounded-xl shadow-md border-2 border-blue-400 p-6 mb-8">
+      <div class="border-b-2 border-blue-500 pb-2 mb-4">
+        <h2 class="text-xl font-bold text-blue-900">माझ्या नोंदी (विद्यार्थ्यांची स्वतःची अभिव्यक्ती)</h2>
+        <p class="text-xs text-gray-600">* सदर नोंदी विद्यार्थ्यांनी स्वतः (चित्रे, अक्षरे किंवा शिक्षकांच्या मदतीने) कराव्यात.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="border border-blue-200 rounded-lg p-4 bg-blue-50/30">
+          <h3 class="font-bold text-blue-900 mb-2 border-b pb-1">📝 सत्र पहिले - माझ्या नोंदी</h3>
+          <textarea id="studentNotesSem1" rows="5" class="w-full text-xs" placeholder="या सत्रात मला काय करायला सर्वाधिक आवडले? मी काय नवीन शिकलो? माझे अनुभव..."></textarea>
+          <div class="mt-3 text-right text-xs italic text-gray-500">"खरे शिक्षण म्हणजे विचार करण्याची कला."</div>
+        </div>
+
+        <div class="border border-blue-200 rounded-lg p-4 bg-blue-50/30">
+          <h3 class="font-bold text-blue-900 mb-2 border-b pb-1">📝 सत्र दुसरे - माझ्या नोंदी</h3>
+          <textarea id="studentNotesSem2" rows="5" class="w-full text-xs" placeholder="दुसऱ्या सत्रातील नवीन अनुभव, प्रकल्प, खेळातील यश किंवा नवीन मित्र..."></textarea>
+          <div class="mt-3 text-right text-xs italic text-gray-500">"अनुभव हाच खरा गुरू."</div>
+        </div>
+      </div>
+
+      <!-- स्वाक्षरी विभाग -->
+      <div class="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-gray-300 text-center text-xs font-semibold text-gray-700">
         <div>
           <div class="h-10 border-b border-gray-400 mb-1"></div>
           <span>वर्गशिक्षक स्वाक्षरी</span>
@@ -559,372 +683,729 @@
       </div>
     </div>
 
-  </main>
+  </div>
 
   <script>
-    const PREP_SUBJECTS = [
-      { id: "r1", title: "१. भाषा शिक्षण १ (Language Education - R1)", goal: "प्रभावी वाचन, सुस्पष्ट लेखन व भाषिक अभिव्यक्ती", color: "border-rose-400", bg: "bg-rose-50" },
-      { id: "r2", title: "२. भाषा शिक्षण २ (Language Education - R2)", goal: "द्वितीय भाषेत संभाषण, प्राथमिक वाचन व आकलन", color: "border-teal-400", bg: "bg-teal-50" },
-      { id: "math", title: "३. गणित शिक्षण (Mathematics Education)", goal: "संख्याज्ञान, गणिती क्रिया, आकार, मापन व समस्या निवारण", color: "border-blue-400", bg: "bg-blue-50" },
-      { id: "evs", title: "४. आपल्या सभोवतालचे जग (The World Around Us)", goal: "परिसर निरीक्षण, वैज्ञानिक दृष्टिकोन व सामाजिक समज", color: "border-amber-400", bg: "bg-amber-50" },
-      { id: "art", title: "५. कला शिक्षण (Art Education)", goal: "दृश्यकला, संगीत, नाटक व हस्तकलेतील सर्जनशीलता", color: "border-purple-400", bg: "bg-purple-50" },
-      { id: "pe", title: "६. शारीरिक शिक्षण व आरोग्य (Physical Education & Well-being)", goal: "सुदृढ आरोग्य, सांघिक खेळ व व्यक्तिगत स्वच्छता", color: "border-emerald-400", bg: "bg-emerald-50" }
+    const DOMAINS = [
+      {
+        id: "domain1",
+        number: "१",
+        title: "शारीरिक विकास (Physical Development)",
+        goals: [
+          "CG. 1* बालके त्यांना निरोगी आणि सुरक्षित ठेवणाऱ्या सवयी विकसित करतात.",
+          "CG. 2* बालके ज्ञानेंद्रियांची कुशाग्रता विकसित करतात.",
+          "CG. 3* सुदृढ आणि लवचीक शरीर विकसित होते."
+        ],
+        themeColor: "border-rose-400",
+        headerBg: "bg-rose-100 text-rose-900 border-rose-300"
+      },
+      {
+        id: "domain2",
+        number: "२",
+        title: "सामाजिक, भावनिक आणि नैतिक विकास (Socio-Emotional & Ethical Development)",
+        goals: [
+          "CG. 4* बालके भावनिक बुद्धिमत्ता विकसित करतात; भावना समजून व्यवस्थापन करण्याची व सामाजिक नियमांना सकारात्मक प्रतिसाद देण्याची क्षमता निर्माण होते.",
+          "CG. 5* बालके उत्पादक कार्याबाबत व सेवेबाबत सकारात्मक दृष्टिकोन विकसित करतात.",
+          "CG. 6* बालके स्वतः भोवतालच्या नैसर्गिक वातावरणाबद्दल कृतज्ञता भाव दर्शवितात."
+        ],
+        themeColor: "border-teal-400",
+        headerBg: "bg-teal-100 text-teal-900 border-teal-300"
+      },
+      {
+        id: "domain3",
+        number: "३",
+        title: "बोधात्मक विकास (Cognitive Development)",
+        goals: [
+          "CG. 7* बालके निरीक्षण व तार्किक विचाराने सभोवतालच्या जगाची जाणीव करून घेतात.",
+          "CG. 8* बालकांची गणितीय समज विकसित होते आणि ती विविध राशी, आकार, मापे यांचा वापर करून जग समजून घेऊ शकतात."
+        ],
+        themeColor: "border-blue-400",
+        headerBg: "bg-blue-100 text-blue-900 border-blue-300"
+      },
+      {
+        id: "domain4",
+        number: "४",
+        title: "भाषा आणि साक्षरता विकास (Language & Literacy Development)",
+        goals: [
+          "CG. 9* बालके दोन भाषांमध्ये दैनंदिन संवाद साधण्यासाठी प्रभावी संवाद कौशल्य विकसित करतात.",
+          "CG. 10* बालके भाषा एक (L1) मध्ये सफाईदारपणे वाचन व लेखन करतात.",
+          "CG. 11* बालके भाषा दोन (L2) मध्ये वाचन व लेखनाचा आरंभ करतात."
+        ],
+        themeColor: "border-amber-400",
+        headerBg: "bg-amber-100 text-amber-900 border-amber-300"
+      },
+      {
+        id: "domain5",
+        number: "५",
+        title: "सौंदर्यदृष्टी आणि सांस्कृतिक विकास (Aesthetic & Cultural Development)",
+        goals: [
+          "CG. 12* बालके दृश्य आणि ललितकलांमध्ये आपली क्षमता आणि संवेदनशीलता विकसित करतात आणि भावना कलेद्वारे व्यक्त करतात."
+        ],
+        themeColor: "border-pink-400",
+        headerBg: "bg-pink-100 text-pink-900 border-pink-300"
+      },
+      {
+        id: "domain5_1",
+        number: "५.१",
+        title: "सकारात्मक अध्ययन सवयी (Positive Learning Habits)",
+        goals: [
+          "CG. 13* बालके अध्ययनाच्या सवयी विकसित करतात, ज्यामुळे त्यांना शालेय वर्गासारख्या औपचारिक अध्ययन वातावरणात सक्रिय राहता येते."
+        ],
+        themeColor: "border-emerald-400",
+        headerBg: "bg-emerald-100 text-emerald-900 border-emerald-300"
+      }
     ];
 
-    const PREP_DEMO_20 = [
-      { name: "आरव सचिन गायकवाड", roll: "०१", dob: "2016-06-12", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991101" },
-      { name: "सिया राहुल जोशी", roll: "०२", dob: "2016-07-15", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991102" },
-      { name: "कबीर अमर शेख", roll: "०३", dob: "2016-04-20", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991103" },
-      { name: "अनन्या नीलेश कुलकर्णी", roll: "०४", dob: "2016-09-08", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991104" },
-      { name: "वेदांत दीपक कांबळे", roll: "०५", dob: "2016-02-28", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991105" },
-      { name: "ईश्वरी विजय सुरवसे", roll: "०६", dob: "2016-11-14", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991106" },
-      { name: "अद्वैत संजय मोहिते", roll: "०७", dob: "2016-05-30", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991107" },
-      { name: "तन्वी विकास सावंत", roll: "०८", dob: "2016-08-22", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991108" },
-      { name: "रोहन ज्ञानेश्वर शिंदे", roll: "०९", dob: "2016-01-10", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991109" },
-      { name: "स्वरा गजानन पाटील", roll: "१०", dob: "2016-10-05", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991110" },
-      { name: "समर्थ अमोल पवार", roll: "११", dob: "2016-03-18", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991111" },
-      { name: "सान्वी मंगेश माने", roll: "१२", dob: "2016-12-04", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991112" },
-      { name: "युवराज संदीप राठोड", roll: "१३", dob: "2016-05-16", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991113" },
-      { name: "रिया बाळकृष्ण सोनवणे", roll: "१४", dob: "2016-07-29", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991114" },
-      { name: "अथर्व गणेश कदम", roll: "१५", dob: "2016-02-11", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991115" },
-      { name: "गार्गी प्रसाद गोखले", roll: "१६", dob: "2016-08-19", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991116" },
-      { name: "अर्णव रवींद्र जाधव", roll: "१७", dob: "2016-04-03", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991117" },
-      { name: "अवनि सुनील नाईक", roll: "१८", dob: "2016-11-25", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991118" },
-      { name: "रुद्र चंद्रकांत साळुंखे", roll: "१९", dob: "2016-01-27", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगा", apaar: "202688991119" },
-      { name: "मायरा आसिफ तांबोळी", roll: "२०", dob: "2016-09-30", grade: "इयत्ता ३ री (Grade 3)", gender: "मुलगी", apaar: "202688991120" }
-    ];
+    let studentsDatabase = [];
+    let currentStudentIndex = 0;
 
-    let preparatoryStudents = [];
-    let currentStudentIdx = 0;
+    // Render Attendance Table Rows cleanly
+    function buildAttendanceTable() {
+      const rowWork = document.getElementById("rowWorkDays");
+      const rowPres = document.getElementById("rowPresDays");
+      const rowPerc = document.getElementById("rowAttPerc");
+      const rowReas = document.getElementById("rowAttReason");
 
-    function renderCurricularSubjects() {
-      const root = document.getElementById("curricularDomainsRoot");
-      if (!root) return;
-      root.innerHTML = "";
+      for (let i = 0; i < 12; i++) {
+        rowWork.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="number" id="work_day_${i}" class="w-12 text-center p-1 work-days" oninput="calculateAttendance(${i})"></td>`);
+        rowPres.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="number" id="pres_day_${i}" class="w-12 text-center p-1 pres-days" oninput="calculateAttendance(${i})"></td>`);
+        rowPerc.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-1 font-bold text-gray-700 att-perc" id="att_perc_${i}">-</td>`);
+        rowReas.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="text" id="att_reason_${i}" class="w-12 text-[10px] p-0.5"></td>`);
+      }
+    }
 
-      PREP_SUBJECTS.forEach(sub => {
-        const div = document.createElement("div");
-        div.className = `border ${sub.color} rounded-lg p-3 ${sub.bg}/30`;
-        div.innerHTML = `
-          <div class="flex flex-wrap justify-between items-center gap-1 mb-2">
-            <h3 class="font-bold text-gray-900 text-xs md:text-sm">${sub.title}</h3>
-            <span class="text-[11px] text-gray-600 italic">ध्येय: ${sub.goal}</span>
-          </div>
+    // Render Domain Pages dynamically
+    function renderDomains() {
+      const container = document.getElementById("domainsContainer");
+      container.innerHTML = "";
 
-          <!-- 3 Abilities: Awareness, Sensitivity, Creativity -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 bg-white p-2 rounded border border-gray-200">
-            <div>
-              <div class="font-semibold text-gray-700 mb-1">१. जाणीव (Awareness):</div>
-              <div class="flex gap-1">
-                ${renderRubricButtons(sub.id, "aw")}
-              </div>
+      DOMAINS.forEach(dom => {
+        const domHtml = `
+        <div class="print-page bg-white rounded-xl shadow-md border-2 ${dom.themeColor} p-6 mb-8">
+          <div class="border-b-2 pb-3 mb-4">
+            <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
+              <h2 class="text-lg md:text-xl font-bold text-gray-800">
+                क्षेत्र क्र. ${dom.number} : ${dom.title}
+              </h2>
+              <span class="text-xs font-semibold px-2 py-1 rounded ${dom.headerBg}">पायाभूत स्तर</span>
             </div>
-            <div>
-              <div class="font-semibold text-gray-700 mb-1">२. संवेदनशीलता (Sensitivity):</div>
-              <div class="flex gap-1">
-                ${renderRubricButtons(sub.id, "se")}
-              </div>
-            </div>
-            <div>
-              <div class="font-semibold text-gray-700 mb-1">३. सर्जनशीलता (Creativity):</div>
-              <div class="flex gap-1">
-                ${renderRubricButtons(sub.id, "cr")}
-              </div>
+            <div class="bg-gray-50 p-2.5 rounded border border-gray-200 text-xs text-gray-700 space-y-1">
+              <div class="font-bold text-gray-800">🎯 अभ्यासक्रमाची ध्येये (Curricular Goals):</div>
+              ${dom.goals.map(g => `<p>• ${g}</p>`).join("")}
             </div>
           </div>
 
-          <div class="mt-2">
-            <input type="text" id="${sub.id}_remark" class="w-full text-xs" placeholder="शिक्षकांचे या विषयातील गुणात्मक निरीक्षण व अभिप्राय...">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-6">
+            <div class="border border-gray-300 rounded-lg p-3 bg-orange-50/20 space-y-2">
+              <div class="font-bold text-sm text-orange-900 border-b border-orange-200 pb-1">🍁 सत्र पहिले (Semester 1)</div>
+              <div>
+                <label class="font-semibold block text-gray-700">क्षमता :</label>
+                <input type="text" id="${dom.id}_s1_comp" class="w-full text-xs" placeholder="निवडलेली क्षमता...">
+              </div>
+              <div>
+                <label class="font-semibold block text-gray-700">मूल्यांकनासाठी घेतलेली कृती / उपक्रम :</label>
+                <textarea id="${dom.id}_s1_act" rows="2" class="w-full text-xs" placeholder="घेतलेला उपक्रम..."></textarea>
+              </div>
+              <div>
+                <label class="font-semibold block text-gray-700">मूल्यांकनासाठीचे प्रश्न :</label>
+                <textarea id="${dom.id}_s1_quest" rows="2" class="w-full text-xs" placeholder="विचारलेले प्रश्न..."></textarea>
+              </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 bg-blue-50/20 space-y-2">
+              <div class="font-bold text-sm text-blue-900 border-b border-blue-200 pb-1">🌱 सत्र दुसरे (Semester 2)</div>
+              <div>
+                <label class="font-semibold block text-gray-700">क्षमता :</label>
+                <input type="text" id="${dom.id}_s2_comp" class="w-full text-xs" placeholder="निवडलेली क्षमता...">
+              </div>
+              <div>
+                <label class="font-semibold block text-gray-700">मूल्यांकनासाठी घेतलेली कृती / उपक्रम :</label>
+                <textarea id="${dom.id}_s2_act" rows="2" class="w-full text-xs" placeholder="घेतलेला उपक्रम..."></textarea>
+              </div>
+              <div>
+                <label class="font-semibold block text-gray-700">मूल्यांकनासाठीचे प्रश्न :</label>
+                <textarea id="${dom.id}_s2_quest" rows="2" class="w-full text-xs" placeholder="विचारलेले प्रश्न..."></textarea>
+              </div>
+            </div>
           </div>
+
+          <div class="mb-6">
+            <h3 class="font-bold text-gray-800 text-sm mb-2 flex items-center justify-between">
+              <span>📊 मूल्यांकन निकषसंच (Rubric) : कामगिरी स्तर नोंद</span>
+              <span class="text-[11px] font-normal text-gray-500">(क्लिक करून स्तर निवडा)</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+              <div class="border border-gray-300 rounded-lg p-3 space-y-3">
+                <div class="font-bold text-orange-900 text-xs border-b pb-1">सत्र पहिले - ३ प्रमुख क्षमता स्तर</div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">१. जाणीवजागृती :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s1", "awareness")}</div>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">२. संवेदनशीलता :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s1", "sensitivity")}</div>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">३. सर्जनशीलता :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s1", "creativity")}</div>
+                </div>
+                <div>
+                  <label class="font-semibold block text-gray-700 mt-2">शिक्षक अभिप्राय (सत्र पहिले) :</label>
+                  <textarea id="${dom.id}_s1_remark" rows="2" class="w-full text-xs" placeholder="शिक्षकांचे निरीक्षण व अभिप्राय..."></textarea>
+                </div>
+              </div>
+
+              <div class="border border-gray-300 rounded-lg p-3 space-y-3">
+                <div class="font-bold text-blue-900 text-xs border-b pb-1">सत्र दुसरे - ३ प्रमुख क्षमता स्तर</div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">१. जाणीवजागृती :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s2", "awareness")}</div>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">२. संवेदनशीलता :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s2", "sensitivity")}</div>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-700 mb-1">३. सर्जनशीलता :</div>
+                  <div class="flex gap-1">${renderRubricButtons(dom.id, "s2", "creativity")}</div>
+                </div>
+                <div>
+                  <label class="font-semibold block text-gray-700 mt-2">शिक्षक अभिप्राय (सत्र दुसरे) :</label>
+                  <textarea id="${dom.id}_s2_remark" rows="2" class="w-full text-xs" placeholder="शिक्षकांचे निरीक्षण व अभिप्राय..."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t pt-4">
+            <h4 class="font-bold text-xs uppercase text-gray-700 mb-3 tracking-wider">
+              👥 त्रिमितीय मूल्यांकन (स्वयंमूल्यांकन, सहाध्यायी व पालक सहभाग)
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+              <div class="bg-gray-50 p-3 rounded border border-gray-200 space-y-3">
+                <span class="font-bold text-gray-800 block border-b pb-1">सत्र पहिले मूल्यांकन</span>
+                <div class="space-y-1">
+                  <span class="font-bold text-indigo-700">★ स्वयंमूल्यांकन (बालकाचे मत):</span>
+                  <div class="flex justify-between items-center">
+                    <span>मला हे काम करायला आवडले:</span>
+                    <select id="${dom.id}_s1_self_like" class="text-xs p-1">
+                      <option value="होय">😊 होय</option>
+                      <option value="नाही">😐 नाही</option>
+                      <option value="माहीत नाही">🤔 माहीत नाही</option>
+                    </select>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span>मला हे काम सोपे वाटले:</span>
+                    <select id="${dom.id}_s1_self_easy" class="text-xs p-1">
+                      <option value="होय">😊 होय</option>
+                      <option value="नाही">😐 नाही</option>
+                      <option value="माहीत नाही">🤔 माहीत नाही</option>
+                    </select>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span>काम करताना मदत लागली:</span>
+                    <select id="${dom.id}_s1_self_help" class="text-xs p-1">
+                      <option value="नाही">नाही (स्वतंत्र)</option>
+                      <option value="वर्गमित्र">वर्गमित्र</option>
+                      <option value="शिक्षक">शिक्षक</option>
+                      <option value="पुस्तक">पुस्तक</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1 pt-2 border-t">
+                  <span class="font-bold text-emerald-700">★ सहाध्यायी मूल्यांकन:</span>
+                  <div class="flex justify-between items-center">
+                    <span>मित्राला काम करायला आवडले:</span>
+                    <select id="${dom.id}_s1_peer_like" class="text-xs p-1">
+                      <option value="होय">होय</option>
+                      <option value="नाही">नाही</option>
+                      <option value="माहीत नाही">माहीत नाही</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1 pt-2 border-t">
+                  <span class="font-bold text-amber-800">★ पालकांचे निरीक्षण:</span>
+                  <input type="text" id="${dom.id}_s1_parent_remark" class="w-full text-xs mt-1" placeholder="पालकांचा अभिप्राय...">
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-3 rounded border border-gray-200 space-y-3">
+                <span class="font-bold text-gray-800 block border-b pb-1">सत्र दुसरे मूल्यांकन</span>
+                <div class="space-y-1">
+                  <span class="font-bold text-indigo-700">★ स्वयंमूल्यांकन (बालकाचे मत):</span>
+                  <div class="flex justify-between items-center">
+                    <span>मला हे काम करायला आवडले:</span>
+                    <select id="${dom.id}_s2_self_like" class="text-xs p-1">
+                      <option value="होय">😊 होय</option>
+                      <option value="नाही">😐 नाही</option>
+                      <option value="माहीत नाही">🤔 माहीत नाही</option>
+                    </select>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span>मला हे काम सोपे वाटले:</span>
+                    <select id="${dom.id}_s2_self_easy" class="text-xs p-1">
+                      <option value="होय">😊 होय</option>
+                      <option value="नाही">😐 नाही</option>
+                      <option value="माहीत नाही">🤔 माहीत नाही</option>
+                    </select>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span>काम करताना मदत लागली:</span>
+                    <select id="${dom.id}_s2_self_help" class="text-xs p-1">
+                      <option value="नाही">नाही (स्वतंत्र)</option>
+                      <option value="वर्गमित्र">वर्गमित्र</option>
+                      <option value="शिक्षक">शिक्षक</option>
+                      <option value="पुस्तक">पुस्तक</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1 pt-2 border-t">
+                  <span class="font-bold text-emerald-700">★ सहाध्यायी मूल्यांकन:</span>
+                  <div class="flex justify-between items-center">
+                    <span>मित्राला काम करायला आवडले:</span>
+                    <select id="${dom.id}_s2_peer_like" class="text-xs p-1">
+                      <option value="होय">होय</option>
+                      <option value="नाही">नाही</option>
+                      <option value="माहीत नाही">माहीत नाही</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1 pt-2 border-t">
+                  <span class="font-bold text-amber-800">★ पालकांचे निरीक्षण:</span>
+                  <input type="text" id="${dom.id}_s2_parent_remark" class="w-full text-xs mt-1" placeholder="पालकांचा अभिप्राय...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         `;
-        root.appendChild(div);
+        container.innerHTML += domHtml;
       });
     }
 
-    function renderRubricButtons(subId, aspect) {
-      const key = `${subId}_${aspect}`;
+    function renderRubricButtons(domId, sem, aspect) {
+      const key = `${domId}_${sem}_${aspect}`;
       return `
-        <input type="hidden" id="${key}" value="Proficient">
-        <button type="button" onclick="setPerformanceLevel('${key}', 'Beginner', this)" class="rubric-btn flex-1 py-1 px-1 rounded border text-[11px] border-orange-400 bg-orange-50 text-orange-900">
-          आरंभी
+        <input type="hidden" id="${key}" value="निर्झर">
+        <button type="button" onclick="setRubricLevel('${key}', 'निर्झर', this)" class="rubric-level-btn flex-1 py-1 px-1.5 rounded border text-[11px] border-blue-400 text-blue-800 bg-blue-50 active-nirjhar">
+          🌊 निर्झर
         </button>
-        <button type="button" onclick="setPerformanceLevel('${key}', 'Proficient', this)" class="rubric-btn flex-1 py-1 px-1 rounded border text-[11px] border-sky-400 bg-sky-50 text-sky-900 active-proficient">
-          प्रवीण
+        <button type="button" onclick="setRubricLevel('${key}', 'पर्वत', this)" class="rubric-level-btn flex-1 py-1 px-1.5 rounded border text-[11px] border-green-400 text-green-800 bg-green-50">
+          ⛰️ पर्वत
         </button>
-        <button type="button" onclick="setPerformanceLevel('${key}', 'Advanced', this)" class="rubric-btn flex-1 py-1 px-1 rounded border text-[11px] border-emerald-400 bg-emerald-50 text-emerald-900">
-          प्रगत
+        <button type="button" onclick="setRubricLevel('${key}', 'आकाश', this)" class="rubric-level-btn flex-1 py-1 px-1.5 rounded border text-[11px] border-purple-400 text-purple-800 bg-purple-50">
+          🌌 आकाश
         </button>
       `;
     }
 
-    function setPerformanceLevel(inputId, level, btn) {
-      const input = document.getElementById(inputId);
-      if (input) input.value = level;
+    function setRubricLevel(inputId, level, btn) {
+      const el = document.getElementById(inputId);
+      if (el) el.value = level;
       const parent = btn.parentElement;
-      const allBtns = parent.querySelectorAll(".rubric-btn");
-      allBtns.forEach(b => b.classList.remove("active-beginner", "active-proficient", "active-advanced"));
-      if (level === "Beginner") btn.classList.add("active-beginner");
-      if (level === "Proficient") btn.classList.add("active-proficient");
-      if (level === "Advanced") btn.classList.add("active-advanced");
+      const buttons = parent.querySelectorAll(".rubric-level-btn");
+      buttons.forEach(b => {
+        b.classList.remove("active-nirjhar", "active-parvat", "active-aakash");
+      });
+      if (level === "निर्झर") btn.classList.add("active-nirjhar");
+      if (level === "पर्वत") btn.classList.add("active-parvat");
+      if (level === "आकाश") btn.classList.add("active-aakash");
     }
 
-    function createBlankPreparatoryStudent(index = 1, demo = null) {
-      const d = demo || {
+    function calculateAttendance(idx) {
+      const workInput = document.getElementById(`work_day_${idx}`);
+      const presInput = document.getElementById(`pres_day_${idx}`);
+      const percCell = document.getElementById(`att_perc_${idx}`);
+      if (!workInput || !presInput || !percCell) return;
+
+      const work = parseFloat(workInput.value);
+      const pres = parseFloat(presInput.value);
+
+      if (!isNaN(work) && !isNaN(pres) && work > 0) {
+        if (pres > work) {
+          showToast(`महिना क्र. ${idx+1}: उपस्थित दिवस कामाच्या दिवसांपेक्षा जास्त असू शकत नाहीत!`);
+          presInput.value = work;
+        }
+        const perc = ((presInput.value / work) * 100).toFixed(1);
+        percCell.textContent = perc + "%";
+        if (perc < 75) {
+          percCell.className = "border border-gray-300 p-1 font-bold text-rose-600 att-perc";
+        } else {
+          percCell.className = "border border-gray-300 p-1 font-bold text-emerald-600 att-perc";
+        }
+      } else {
+        percCell.textContent = "-";
+      }
+    }
+
+    function previewImage(event) {
+      const reader = new FileReader();
+      reader.onload = function() {
+        const preview = document.getElementById("photoPreview");
+        preview.innerHTML = `<img src="${reader.result}" class="w-full h-full object-cover">`;
+        if (studentsDatabase[currentStudentIndex]) {
+          studentsDatabase[currentStudentIndex].photoData = reader.result;
+          saveAllToLocalStorage();
+        }
+      };
+      if (event.target.files && event.target.files[0]) {
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    }
+
+    const DEFAULT_20_STUDENTS = [
+      { name: "आरव संतोष गायकवाड", roll: "०१", dob: "2018-06-12", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114401" },
+      { name: "सिया सचिन जोशी", roll: "०२", dob: "2018-07-15", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114402" },
+      { name: "कबीर राहुल शिंदे", roll: "०३", dob: "2018-04-20", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114403" },
+      { name: "अनघा गजानन कुलकर्णी", roll: "०४", dob: "2018-09-08", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114404" },
+      { name: "वेदांत नितीन पवार", roll: "०५", dob: "2018-02-28", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114405" },
+      { name: "सान्वी महेश जाधव", roll: "०६", dob: "2018-11-14", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114406" },
+      { name: "रुद्र दत्तात्रय पाटील", roll: "०७", dob: "2018-05-30", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114407" },
+      { name: "तन्वी विकास देशमुख", roll: "०८", dob: "2018-08-22", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114408" },
+      { name: "आयुष संजय कांबळे", roll: "०९", dob: "2018-01-10", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114409" },
+      { name: "स्वरा दीपक सावंत", roll: "१०", dob: "2018-10-05", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114410" },
+      { name: "अद्वैत प्रशांत मोरे", roll: "११", dob: "2018-03-18", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114411" },
+      { name: "अनन्या विजय चव्हाण", roll: "१२", dob: "2018-12-04", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114412" },
+      { name: "शौर्य अमोल भोसले", roll: "१३", dob: "2018-05-16", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114413" },
+      { name: "इरा किरण कदम", roll: "१४", dob: "2018-07-29", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114414" },
+      { name: "विवान गणेश सोनावणे", roll: "१५", dob: "2018-02-11", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114415" },
+      { name: "ओवी मंगेश साळुंखे", roll: "१६", dob: "2018-08-19", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114416" },
+      { name: "समर्थ विनोद जगताप", roll: "१७", dob: "2018-04-03", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114417" },
+      { name: "आरोही प्रवीण इंगळे", roll: "१८", dob: "2018-11-25", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114418" },
+      { name: "रोहन प्रकाश वाघमारे", roll: "१९", dob: "2018-01-27", grade: "इ. पहिली", gender: "मुलगा", mobile: "9822114419" },
+      { name: "मायरा सुनील खोत", roll: "२०", dob: "2018-09-30", grade: "इ. पहिली", gender: "मुलगी", mobile: "9822114420" }
+    ];
+
+    function createBlankStudentObject(index = 1, sample = null) {
+      const s = sample || {
         name: `विद्यार्थी ${index}`,
         roll: index < 10 ? `०${index}` : `${index}`,
-        dob: "2016-06-01",
-        grade: "इयत्ता ३ री (Grade 3)",
-        gender: "मुलगा",
-        apaar: `2026889911${index < 10 ? '0' + index : index}`
+        dob: "2018-06-01",
+        grade: "इ. पहिली",
+        mobile: "9800000000"
       };
 
       const base = {
-        schoolName: "जिल्हा परिषद प्राथमिक आदर्श शाळा",
-        udiseCode: "27240800101",
+        schoolName: "जि. प. प्राथमिक शाळा, आदर्श केंद्र",
+        udiseNo: "27240800101",
         pinCode: "411030",
-        studentName: d.name,
-        rollNo: d.roll,
-        grade: d.grade,
-        apaarId: d.apaar,
-        dob: d.dob,
-        gender: d.gender,
+        apaarId: `8899-7744-11${index < 10 ? '0' + index : index}`,
+        saralId: `2024272408001010${index < 10 ? '0' + index : index}`,
+        teacherId: "TCH-MH-2024",
+        studentName: s.name,
+        rollNo: s.roll,
+        dob: s.dob,
+        grade: s.grade,
         section: "अ",
-        likeTo: "गोष्टींची पुस्तके वाचणे, चित्रे रंगवणे आणि मैदानावर खेळणे",
-        favGames: "खो-खो, लंगडी, लपंडाव आणि बुद्धिबळ",
-        favFood: "पुरणपोळी, वरण-भात आणि फळे",
-        goodAt: "सुंदर व वळणदार हस्ताक्षर, पाढे पाठांतर व चित्रकला",
-        improveAt: "इंग्रजी संभाषण आणि वक्तृत्व स्पर्धा",
-        myIdol: "भारतरत्न डॉ. ए.पी.जे. अब्दुल कलाम",
-        feel_q1: "Yes (होय)",
-        feel_q2: "Yes (होय)",
-        feel_q3: "Yes (होय)",
-        feel_q4: "Yes (होय)",
-        peerName: PREP_DEMO_20[(index % 20)].name.split(" ")[0] + " " + PREP_DEMO_20[(index % 20)].name.split(" ")[1],
-        peerHelp: "Yes (होय)",
-        parentNote: "घरी वेळेवर स्वाध्याय पूर्ण करतो, सहकार्य व वाचनाची उत्तम आवड आहे.",
-        sum_lang: "स्वतंत्रपणे समजपूर्वक वाचन करतो, स्वतःच्या शब्दांत विचार मांडतो.",
-        sum_math: "चार अंकी संख्यांची बेरीज, वजाबाकी व गणिती कोडी सहज सोडवतो.",
-        sum_evs: "परिसरातील वनस्पती व प्राण्यांची काळजी घेतो, वैज्ञानिक जिज्ञासा आहे.",
-        sum_artpe: "रंगसंगती उत्तम वापरतो, मैदानी खेळांमध्ये चपळता व नेतृत्व दर्शवतो.",
-        cr_1: 2.52,
-        cr_2: 2.64,
-        cr_3: 2.50,
-        cr_4: 2.76,
-        cr_5: 1.38,
-        cr_6: 1.38
+        areaType: "ग्रामीण",
+        motherTongue: "मराठी",
+        medium: "मराठी",
+        studentAddress: "मु. पो. आदर्श गाव, ता. हवेली, जि. पुणे",
+        weight: (18 + (index % 5) * 0.5) + " kg",
+        height: (105 + (index % 7)) + " cm",
+        mobile: s.mobile,
+        motherName: s.gender === "मुलगी" ? "सुनिता सावंत" : "सुवर्णा गायकवाड",
+        motherEdu: "१० वी पास",
+        motherOcc: "गृहिणी",
+        fatherName: s.name.split(" ")[1] ? s.name.split(" ")[1] + " " + (s.name.split(" ")[2] || "") : "संतोष गायकवाड",
+        fatherEdu: "१२ वी पास",
+        fatherOcc: "शेती / व्यवसाय",
+        siblingsCount: "१",
+        siblingsAge: "४ वर्षे",
+        myAge: "६",
+        myBday: s.dob,
+        myFamily: "माझ्या घरात आई, बाबा, आजी आणि मी आनंदाने राहतो.",
+        myAmbition: index % 2 === 0 ? "चित्रकार व शिक्षक" : "वैमानिक व खेळाडू",
+        myFriends: "सर्व वर्गमित्र आणि मैत्रिणी",
+        favColor: ["निळा", "हिरवा", "लाल", "पिवळा", "गुलाबी"][index % 5],
+        favFlower: "गुलाब",
+        favFood: "वरण-भात आणि गोड शिरा",
+        favSport: "लपंडाव व धावणे",
+        favAnimal: "ससा",
+        favSubject: "गणित व चित्रकला",
+        homeChores: "जेवणानंतर ताट ठेवणे, दप्तर भरणे, पाणी देणे.",
+        hobby_read: true,
+        hobby_sports: true,
+        hobby_art: true,
+        studentNotesSem1: "मला शाळेत मित्रांसोबत गोष्टी ऐकायला आणि मातीचे खेळ खेळायला खूप आवडले.",
+        studentNotesSem2: "मी अंकांची बेरीज पटकन करायला शिकलो आणि बालनाट्यात छान अभिनय केला.",
+        summary_level_1: "पर्वत",
+        summary_level_2: "आकाश",
+        summary_level_3: "पर्वत",
+        summary_level_4: "आकाश",
+        summary_level_5: "आकाश",
+        summary_level_5_1: "पर्वत",
+        summary_text_1: "शारीरिकदृष्ट्या चपळ असून मैदानी खेळांमध्ये उत्साहाने भाग घेतो/घेते.",
+        summary_text_2: "मित्रांशी सहकार्याची भावना असून वर्गातील नियमांचे पालन करतो/करते.",
+        summary_text_3: "संख्या संकल्पना व आकारांची उत्तम समज आहे.",
+        summary_text_4: "गोष्टी स्वतःच्या शब्दांत आत्मविश्वासाने सांगतो/सांगते.",
+        summary_text_5: "विविध रंगांचा वापर करून सुंदर चित्रे काढतो/काढते.",
+        summary_text_5_1: "नियमित गृहकार्य करतो/करते व नवीन गोष्टी शिकण्याची जिज्ञासा आहे."
       };
 
-      // 12 months default school days (April to March)
-      const standardSchoolDays = [22, 0, 15, 24, 23, 22, 18, 20, 24, 23, 22, 24];
-      for (let i = 0; i < 12; i++) {
-        base[`sch_day_${i}`] = standardSchoolDays[i];
-        base[`pre_day_${i}`] = Math.max(0, standardSchoolDays[i] - (index % 3));
+      const workDays = [12, 24, 22, 21, 18, 22, 24, 23, 22, 23, 20, 0];
+      for(let i = 0; i < 12; i++) {
+        base[`work_day_${i}`] = workDays[i];
+        base[`pres_day_${i}`] = Math.max(0, workDays[i] - (index % 3));
+        base[`att_reason_${i}`] = "";
       }
 
-      // Default rubrics
-      PREP_SUBJECTS.forEach(s => {
-        base[`${s.id}_aw`] = "Proficient";
-        base[`${s.id}_se`] = "Proficient";
-        base[`${s.id}_cr`] = (index % 2 === 0) ? "Advanced" : "Proficient";
-        base[`${s.id}_remark`] = "कामगिरी समाधानकारक व प्रगतीपथावर आहे.";
+      DOMAINS.forEach(dom => {
+        base[`${dom.id}_s1_comp`] = "सदर क्षेत्रातील पायाभूत क्षमतांचा विकास.";
+        base[`${dom.id}_s1_act`] = "विविध खेळ व कृतींद्वारे प्रात्यक्षिक घेणे.";
+        base[`${dom.id}_s1_quest`] = "प्रश्नांची उत्तरे स्वतःच्या शब्दांत देणे.";
+        base[`${dom.id}_s1_remark`] = "कामगिरी उत्तम आहे.";
+
+        base[`${dom.id}_s2_comp`] = "स्वतंत्रपणे क्षमतांचा प्रत्यक्ष वापर करणे.";
+        base[`${dom.id}_s2_act`] = "प्रकल्प व गटातील उपक्रम पूर्ण करणे.";
+        base[`${dom.id}_s2_quest`] = "सर्जनशील विचार करून उत्तरे देणे.";
+        base[`${dom.id}_s2_remark`] = "प्रगती समाधानकारक असून सातत्य आहे.";
+
+        base[`${dom.id}_s1_awareness`] = "पर्वत";
+        base[`${dom.id}_s1_sensitivity`] = "पर्वत";
+        base[`${dom.id}_s1_creativity`] = "आकाश";
+
+        base[`${dom.id}_s2_awareness`] = "आकाश";
+        base[`${dom.id}_s2_sensitivity`] = "पर्वत";
+        base[`${dom.id}_s2_creativity`] = "आकाश";
+
+        base[`${dom.id}_s1_self_like`] = "होय";
+        base[`${dom.id}_s1_self_easy`] = "होय";
+        base[`${dom.id}_s1_self_help`] = "नाही";
+        base[`${dom.id}_s1_peer_like`] = "होय";
+        base[`${dom.id}_s1_parent_remark`] = "छान प्रगती आहे.";
+
+        base[`${dom.id}_s2_self_like`] = "होय";
+        base[`${dom.id}_s2_self_easy`] = "होय";
+        base[`${dom.id}_s2_self_help`] = "नाही";
+        base[`${dom.id}_s2_peer_like`] = "होय";
+        base[`${dom.id}_s2_parent_remark`] = "अभ्यासात खूप रस घेतो.";
       });
 
       return base;
     }
 
-    function loadTwentyPreparatoryDemo() {
-      preparatoryStudents = PREP_DEMO_20.map((sample, i) => createBlankPreparatoryStudent(i + 1, sample));
-      currentStudentIdx = 0;
-      saveAllToStorage();
-      renderRibbon();
-      loadStudentIntoUI(0);
-      showCustomModal("✨ २० विद्यार्थ्यांची माहिती भरली!", "इयत्ता ३ री ते ५ वी च्या सर्व २० विद्यार्थ्यांची परिपूर्ण माहिती लोड झाली आहे. वरील पट्टीतील क्रमांकावर क्लिक करून तुम्ही कोणत्याही विद्यार्थ्याचे प्रगतीपत्रक पाहू व संपादित करू शकता.");
+    function loadTwentySampleStudents() {
+      studentsDatabase = DEFAULT_20_STUDENTS.map((sample, idx) => {
+        return createBlankStudentObject(idx + 1, sample);
+      });
+      currentStudentIndex = 0;
+      saveAllToLocalStorage();
+      renderStudentPills();
+      loadStudentIntoForm(0);
+      showCustomModal("✨ २० विद्यार्थ्यांची माहिती भरली!", "२० विद्यार्थ्यांची संपूर्ण माहिती यशस्वीरीत्या भरली आहे.");
     }
 
-    function renderRibbon() {
-      const container = document.getElementById("studentRibbonContainer");
+    function renderStudentPills() {
+      const container = document.getElementById("studentPillsContainer");
       if (!container) return;
       container.innerHTML = "";
 
-      preparatoryStudents.forEach((stu, idx) => {
+      studentsDatabase.forEach((std, index) => {
         const btn = document.createElement("button");
         btn.type = "button";
         btn.className = `student-pill px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition border ${
-          idx === currentStudentIdx
-            ? "active-student bg-white text-amber-950 border-white shadow"
-            : "bg-amber-800/80 hover:bg-amber-800 text-amber-100 border-amber-600"
+          index === currentStudentIndex
+            ? "active-student bg-white text-orange-900 border-white shadow"
+            : "bg-orange-800/80 hover:bg-orange-800 text-orange-100 border-orange-600"
         }`;
-        btn.textContent = `${idx + 1}. ${(stu.studentName || 'विद्यार्थी').split(' ')[0]}`;
-        btn.onclick = () => switchStudent(idx);
+        btn.textContent = `${index + 1}. ${(std.studentName || 'विद्यार्थी').split(' ')[0]}`;
+        btn.onclick = () => switchStudent(index);
         container.appendChild(btn);
       });
 
-      document.getElementById("totalStudentsCount").textContent = preparatoryStudents.length;
-      updateActiveBadge();
+      document.getElementById("totalStudentsCount").textContent = studentsDatabase.length;
+      updateActiveStudentBadge();
     }
 
-    function updateActiveBadge() {
-      const stu = preparatoryStudents[currentStudentIdx];
-      const badge = document.getElementById("activeBadge");
-      if (stu && badge) {
-        badge.textContent = `${currentStudentIdx + 1}. ${stu.studentName || 'विद्यार्थी'}`;
+    function updateActiveStudentBadge() {
+      const std = studentsDatabase[currentStudentIndex];
+      const badge = document.getElementById("activeStudentBadge");
+      if (std && badge) {
+        badge.textContent = `${currentStudentIndex + 1}. ${std.studentName || 'विद्यार्थी'}`;
       }
     }
 
     function syncStudentNameInUI() {
       const nameInput = document.getElementById("studentName");
       if (!nameInput) return;
-      if (preparatoryStudents[currentStudentIdx]) {
-        preparatoryStudents[currentStudentIdx].studentName = nameInput.value;
+      if (studentsDatabase[currentStudentIndex]) {
+        studentsDatabase[currentStudentIndex].studentName = nameInput.value;
       }
-      updateActiveBadge();
+      updateActiveStudentBadge();
       const pills = document.querySelectorAll(".student-pill");
-      if (pills[currentStudentIdx]) {
-        pills[currentStudentIdx].textContent = `${currentStudentIdx + 1}. ${(nameInput.value || 'विद्यार्थी').split(' ')[0]}`;
+      if (pills[currentStudentIndex]) {
+        pills[currentStudentIndex].textContent = `${currentStudentIndex + 1}. ${(nameInput.value || 'विद्यार्थी').split(' ')[0]}`;
       }
     }
 
-    function switchStudent(newIdx) {
-      if (newIdx < 0 || newIdx >= preparatoryStudents.length) return;
+    function switchStudent(newIndex) {
+      if (newIndex < 0 || newIndex >= studentsDatabase.length) return;
       saveCurrentStudentData(false);
-      currentStudentIdx = newIdx;
-      renderRibbon();
-      loadStudentIntoUI(newIdx);
-      showToast(`${preparatoryStudents[newIdx].studentName || 'विद्यार्थी'} चे प्रगतिपत्रक उघडले.`);
+      currentStudentIndex = newIndex;
+      renderStudentPills();
+      loadStudentIntoForm(newIndex);
+      showToast(`${studentsDatabase[newIndex].studentName || 'विद्यार्थी'} चे प्रगतिपत्रक उघडले.`);
     }
 
-    function saveCurrentStudentData(showToastMsg = true) {
-      if (!preparatoryStudents[currentStudentIdx]) {
-        preparatoryStudents[currentStudentIdx] = createBlankPreparatoryStudent(currentStudentIdx + 1);
+    function saveCurrentStudentData(showSuccessToast = true) {
+      if (!studentsDatabase[currentStudentIndex]) {
+        studentsDatabase[currentStudentIndex] = createBlankStudentObject(currentStudentIndex + 1);
       }
-      const data = preparatoryStudents[currentStudentIdx];
+      const data = studentsDatabase[currentStudentIndex];
 
       const inputs = document.querySelectorAll("input, textarea, select");
       inputs.forEach(el => {
         if (el.id) {
-          data[el.id] = el.value;
+          if (el.type === "checkbox") {
+            data[el.id] = el.checked;
+          } else if (el.type === "radio") {
+            if (el.checked) data[el.name] = el.value;
+          } else {
+            data[el.id] = el.value;
+          }
         }
       });
 
-      saveAllToStorage();
-      if (showToastMsg) {
-        showToast(`विद्यार्थी क्र. ${currentStudentIdx + 1} ची माहिती यशस्वीरीत्या सेव्ह केली!`);
+      const checkedGrade = document.querySelector('input[name="grade"]:checked');
+      if (checkedGrade) {
+        data["grade"] = checkedGrade.value;
+      }
+
+      saveAllToLocalStorage();
+      if (showSuccessToast) {
+        showToast(`विद्यार्थी क्र. ${currentStudentIndex + 1} ची माहिती सेव्ह केली!`);
       }
     }
 
-    function loadStudentIntoUI(idx) {
-      const data = preparatoryStudents[idx];
+    function loadStudentIntoForm(index) {
+      const data = studentsDatabase[index];
       if (!data) return;
 
       Object.keys(data).forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.value = data[id];
+        if (el) {
+          if (el.type === "checkbox") {
+            el.checked = !!data[id];
+          } else {
+            el.value = data[id];
+          }
+        }
       });
 
-      // Synchronize rubric button visual styles
-      PREP_SUBJECTS.forEach(s => {
-        ["aw", "se", "cr"].forEach(aspect => {
-          const key = `${s.id}_${aspect}`;
-          const val = data[key] || "Proficient";
-          const hiddenInput = document.getElementById(key);
-          if (hiddenInput) {
-            hiddenInput.value = val;
-            const parent = hiddenInput.parentElement;
-            const buttons = parent.querySelectorAll(".rubric-btn");
-            buttons.forEach(b => {
-              b.classList.remove("active-beginner", "active-proficient", "active-advanced");
-              if (b.textContent.includes(val === "Beginner" ? "आरंभी" : val === "Proficient" ? "प्रवीण" : "प्रगत")) {
-                if (val === "Beginner") b.classList.add("active-beginner");
-                if (val === "Proficient") b.classList.add("active-proficient");
-                if (val === "Advanced") b.classList.add("active-advanced");
-              }
-            });
-          }
+      if (data.grade) {
+        const radios = document.querySelectorAll('input[name="grade"]');
+        radios.forEach(r => {
+          r.checked = (r.value === data.grade);
+        });
+      }
+
+      const preview = document.getElementById("photoPreview");
+      if (data.photoData) {
+        preview.innerHTML = `<img src="${data.photoData}" class="w-full h-full object-cover">`;
+      } else {
+        preview.innerHTML = `<span class="text-gray-400 text-xs text-center p-2">विद्यार्थ्यांचा फोटो</span>`;
+      }
+
+      DOMAINS.forEach(dom => {
+        ["s1", "s2"].forEach(sem => {
+          ["awareness", "sensitivity", "creativity"].forEach(aspect => {
+            const key = `${dom.id}_${sem}_${aspect}`;
+            const val = data[key] || "निर्झर";
+            const hiddenInput = document.getElementById(key);
+            if (hiddenInput) {
+              hiddenInput.value = val;
+              const parent = hiddenInput.parentElement;
+              const buttons = parent.querySelectorAll(".rubric-level-btn");
+              buttons.forEach(b => {
+                b.classList.remove("active-nirjhar", "active-parvat", "active-aakash");
+                if (b.textContent.includes(val)) {
+                  if (val === "निर्झर") b.classList.add("active-nirjhar");
+                  if (val === "पर्वत") b.classList.add("active-parvat");
+                  if (val === "आकाश") b.classList.add("active-aakash");
+                }
+              });
+            }
+          });
         });
       });
 
-      calculatePreparatoryAttendance();
-      calcTotalCredits();
-      updateActiveBadge();
-    }
-
-    function calculatePreparatoryAttendance() {
-      let totalSchool = 0;
-      let totalPresent = 0;
-
-      for (let i = 0; i < 12; i++) {
-        const sInput = document.getElementById(`sch_day_${i}`);
-        const pInput = document.getElementById(`pre_day_${i}`);
-        const rCell = document.getElementById(`att_rate_${i}`);
-
-        if (sInput && pInput && rCell) {
-          const s = parseFloat(sInput.value) || 0;
-          let p = parseFloat(pInput.value) || 0;
-
-          if (p > s) {
-            p = s;
-            pInput.value = s;
-          }
-
-          totalSchool += s;
-          totalPresent += p;
-
-          if (s > 0) {
-            const pct = ((p / s) * 100).toFixed(0);
-            rCell.textContent = pct + "%";
-            rCell.className = pct < 75 ? "border border-gray-300 p-0.5 text-rose-600 font-bold" : "border border-gray-300 p-0.5 text-emerald-700 font-semibold";
-          } else {
-            rCell.textContent = "-";
-          }
-        }
+      for(let i = 0; i < 12; i++) {
+        calculateAttendance(i);
       }
 
-      document.getElementById("totSchDays").textContent = totalSchool;
-      document.getElementById("totPreDays").textContent = totalPresent;
-      const overall = totalSchool > 0 ? ((totalPresent / totalSchool) * 100).toFixed(1) : 0;
-      document.getElementById("totAttRate").textContent = overall + "%";
-      document.getElementById("attSummaryBadge").textContent = overall + "%";
-    }
-
-    function calcTotalCredits() {
-      let sum = 0;
-      for (let i = 1; i <= 6; i++) {
-        const inp = document.getElementById(`cr_${i}`);
-        if (inp) sum += parseFloat(inp.value) || 0;
-      }
-      document.getElementById("totCreditsSum").textContent = sum.toFixed(2);
+      updateActiveStudentBadge();
     }
 
     function addNewStudent() {
       saveCurrentStudentData(false);
-      const newIndex = preparatoryStudents.length + 1;
-      const newStd = createBlankPreparatoryStudent(newIndex);
-      preparatoryStudents.push(newStd);
-      currentStudentIdx = preparatoryStudents.length - 1;
-      saveAllToStorage();
-      renderRibbon();
-      loadStudentIntoUI(currentStudentIdx);
+      const newIndex = studentsDatabase.length + 1;
+      const newStd = createBlankStudentObject(newIndex);
+      studentsDatabase.push(newStd);
+      currentStudentIndex = studentsDatabase.length - 1;
+      saveAllToLocalStorage();
+      renderStudentPills();
+      loadStudentIntoForm(currentStudentIndex);
       showToast(`नवीन विद्यार्थी #${newIndex} जोडला गेला!`);
     }
 
-    function openRosterModal() {
+    function saveAllToLocalStorage() {
+      try {
+        localStorage.setItem("hpc_multi_students_db", JSON.stringify(studentsDatabase));
+        localStorage.setItem("hpc_active_student_index", currentStudentIndex);
+      } catch (e) {
+        console.error("Local storage error:", e);
+      }
+    }
+
+    function loadAllFromLocalStorage() {
+      try {
+        const raw = localStorage.getItem("hpc_multi_students_db");
+        if (raw) {
+          studentsDatabase = JSON.parse(raw);
+          const savedIndex = parseInt(localStorage.getItem("hpc_active_student_index"), 10);
+          currentStudentIndex = (!isNaN(savedIndex) && savedIndex >= 0 && savedIndex < studentsDatabase.length) ? savedIndex : 0;
+        } else {
+          loadTwentySampleStudents();
+          return;
+        }
+      } catch (e) {
+        console.error("Failed to parse stored students", e);
+        loadTwentySampleStudents();
+        return;
+      }
+      renderStudentPills();
+      loadStudentIntoForm(currentStudentIndex);
+    }
+
+    function openStudentRosterModal() {
       saveCurrentStudentData(false);
       const tbody = document.getElementById("rosterTableBody");
       tbody.innerHTML = "";
 
-      preparatoryStudents.forEach((stu, i) => {
+      studentsDatabase.forEach((std, i) => {
         const tr = document.createElement("tr");
-        tr.className = i === currentStudentIdx ? "bg-amber-50 font-semibold" : "hover:bg-gray-50";
+        tr.className = i === currentStudentIndex ? "bg-orange-50 font-semibold" : "hover:bg-gray-50";
         tr.innerHTML = `
           <td class="p-2 border-b text-center font-bold text-gray-500">${i + 1}</td>
-          <td class="p-2 border-b font-medium">${stu.rollNo || '-'}</td>
-          <td class="p-2 border-b font-bold text-gray-800">${stu.studentName || 'नाव नाही'}</td>
-          <td class="p-2 border-b">${stu.grade || 'इयत्ता ३ री'}</td>
-          <td class="p-2 border-b text-gray-600">${stu.apaarId || '-'}</td>
+          <td class="p-2 border-b">${std.rollNo || '-'}</td>
+          <td class="p-2 border-b font-medium text-gray-800">${std.studentName || 'नाव नाही'}</td>
+          <td class="p-2 border-b">${std.grade || 'इ. पहिली'}</td>
+          <td class="p-2 border-b">${std.mobile || '-'}</td>
           <td class="p-2 border-b text-center space-x-1">
-            <button onclick="selectStudentFromRoster(${i})" class="bg-amber-600 hover:bg-amber-700 text-white px-2 py-1 rounded text-[11px] font-bold">उघडा</button>
-            ${preparatoryStudents.length > 1 ? `
-              <button onclick="deleteStudent(${i})" class="bg-rose-100 hover:bg-rose-200 text-rose-700 px-2 py-1 rounded text-[11px]">हटवा</button>
+            <button type="button" onclick="selectStudentFromRoster(${i})" class="bg-orange-600 hover:bg-orange-700 text-white px-2 py-1 rounded text-[11px] font-bold">
+              उघडा
+            </button>
+            ${studentsDatabase.length > 1 ? `
+              <button type="button" onclick="confirmDeleteStudent(${i})" class="bg-rose-100 hover:bg-rose-200 text-rose-700 px-2 py-1 rounded text-[11px]">
+                हटवा
+              </button>
             ` : ''}
           </td>
         `;
@@ -938,65 +1419,36 @@
       document.getElementById("rosterModal").classList.add("hidden");
     }
 
-    function selectStudentFromRoster(idx) {
+    function selectStudentFromRoster(index) {
       closeRosterModal();
-      switchStudent(idx);
+      switchStudent(index);
     }
 
-    function deleteStudent(idx) {
-      const name = preparatoryStudents[idx].studentName || `विद्यार्थी ${idx+1}`;
-      showConfirmModal("विद्यार्थी हटवायचा आहे का?", `'${name}' ची सर्व माहिती कायमची हटवली जाईल. पुढे जायचे का?`, () => {
-        preparatoryStudents.splice(idx, 1);
-        if (currentStudentIdx >= preparatoryStudents.length) {
-          currentStudentIdx = Math.max(0, preparatoryStudents.length - 1);
+    function confirmDeleteStudent(index) {
+      const stdName = studentsDatabase[index].studentName || `विद्यार्थी ${index+1}`;
+      showConfirmModal("विद्यार्थी हटवायचा आहे का?", `तुम्हाला खात्री आहे का? '${stdName}' ची सर्व माहिती कायमची हटवली जाईल.`, () => {
+        studentsDatabase.splice(index, 1);
+        if (currentStudentIndex >= studentsDatabase.length) {
+          currentStudentIndex = Math.max(0, studentsDatabase.length - 1);
         }
-        saveAllToStorage();
-        renderRibbon();
-        loadStudentIntoUI(currentStudentIdx);
-        openRosterModal();
+        saveAllToLocalStorage();
+        renderStudentPills();
+        loadStudentIntoForm(currentStudentIndex);
+        openStudentRosterModal();
         showToast("विद्यार्थी यशस्वीरीत्या हटवला.");
       });
     }
 
-    function saveAllToStorage() {
-      try {
-        localStorage.setItem("hpc_preparatory_students_db", JSON.stringify(preparatoryStudents));
-        localStorage.setItem("hpc_prep_active_idx", currentStudentIdx);
-      } catch (e) {
-        console.error("Storage error:", e);
-      }
-    }
-
-    function loadAllFromStorage() {
-      try {
-        const raw = localStorage.getItem("hpc_preparatory_students_db");
-        if (raw) {
-          preparatoryStudents = JSON.parse(raw);
-          const savedIdx = parseInt(localStorage.getItem("hpc_prep_active_idx"), 10);
-          currentStudentIdx = (!isNaN(savedIdx) && savedIdx >= 0 && savedIdx < preparatoryStudents.length) ? savedIdx : 0;
-        } else {
-          loadTwentyPreparatoryDemo();
-          return;
-        }
-      } catch (e) {
-        console.error("Storage parse error:", e);
-        loadTwentyPreparatoryDemo();
-        return;
-      }
-      renderRibbon();
-      loadStudentIntoUI(currentStudentIdx);
-    }
-
     function exportAllDataJSON() {
       saveCurrentStudentData(false);
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(preparatoryStudents, null, 2));
-      const anchor = document.createElement('a');
-      anchor.setAttribute("href", dataStr);
-      anchor.setAttribute("download", `HPC_Preparatory_20_Students_${new Date().toISOString().slice(0,10)}.json`);
-      document.body.appendChild(anchor);
-      anchor.click();
-      anchor.remove();
-      showToast("सर्व २० विद्यार्थ्यांचा डेटा डाऊनलोड झाला!");
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(studentsDatabase, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `HPC_Students_Data_${new Date().toISOString().slice(0,10)}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      showToast("विद्यार्थ्यांचा डेटा डाऊनलोड झाला!");
     }
 
     function importDataJSON(event) {
@@ -1007,18 +1459,18 @@
         try {
           const parsed = JSON.parse(e.target.result);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            preparatoryStudents = parsed;
-            currentStudentIdx = 0;
-            saveAllToStorage();
-            renderRibbon();
-            loadStudentIntoUI(0);
+            studentsDatabase = parsed;
+            currentStudentIndex = 0;
+            saveAllToLocalStorage();
+            renderStudentPills();
+            loadStudentIntoForm(0);
             closeRosterModal();
-            showCustomModal("यशस्वी!", `${preparatoryStudents.length} विद्यार्थ्यांचा डेटा यशस्वीरीत्या लोड झाला.`);
+            showCustomModal("यशस्वी!", `${studentsDatabase.length} विद्यार्थ्यांचा डेटा यशस्वीरीत्या लोड झाला आहे.`);
           } else {
-            showCustomModal("त्रुटी", "अवैध डेटा फॉरमॅट. कृपया वैध JSON फाइल निवडा.");
+            showCustomModal("त्रुटी", "अवैध डेटा फॉरमॅट. कृपया योग्य JSON फाइल निवडा.");
           }
         } catch(err) {
-          showCustomModal("त्रुटी", "फाइल वाचताना अडचण आली.");
+          showCustomModal("त्रुटी", "फाइल वाचता आली नाही किंवा फाइल दूषित आहे.");
         }
       };
       reader.readAsText(file);
@@ -1029,11 +1481,11 @@
       window.print();
     }
 
-    function printAllTwentyStudents() {
+    function printAllStudents() {
       saveCurrentStudentData(false);
       showConfirmModal(
-        "सर्व २० विद्यार्थ्यांची सलग प्रिंट",
-        `सर्व ${preparatoryStudents.length} विद्यार्थ्यांचे समग्र प्रगतिपत्रक A4 स्वरूपात प्रिंट करायचे आहे का? (सर्व विद्यार्थ्यांची पाने सलग तयार होतील)`,
+        "सर्व विद्यार्थ्यांची प्रिंट",
+        `सर्व ${studentsDatabase.length} विद्यार्थ्यांचे प्रगतीपत्रक सलग प्रिंट करायचे आहे का?`,
         () => {
           executeBatchPrint();
         }
@@ -1041,30 +1493,44 @@
     }
 
     function executeBatchPrint() {
-      const container = document.getElementById("printableCardContainer");
-      const originalHtml = container.innerHTML;
-      const backupIdx = currentStudentIdx;
+      const originalContainer = document.getElementById("printableCardContainer");
+      const backupIndex = currentStudentIndex;
 
-      let fullBatchHtml = "";
-      preparatoryStudents.forEach((stu, i) => {
-        loadStudentIntoUI(i);
-        fullBatchHtml += `
-          <div class="${i > 0 ? 'batch-separator' : ''}">
-            <div class="no-print bg-amber-700 text-white p-2 rounded mb-2 text-center text-xs font-bold">
-              --- विद्यार्थी ${i + 1}/${preparatoryStudents.length}: ${stu.studentName} ---
-            </div>
-            ${container.innerHTML}
-          </div>
-        `;
+      // Sync form into state
+      saveCurrentStudentData(false);
+
+      const printWrapper = document.createElement("div");
+      printWrapper.id = "printBatchWrapper";
+
+      studentsDatabase.forEach((std, i) => {
+        loadStudentIntoForm(i);
+        const clone = originalContainer.cloneNode(true);
+        // Sync inputs from original to clone
+        const origInputs = originalContainer.querySelectorAll("input, textarea, select");
+        const cloneInputs = clone.querySelectorAll("input, textarea, select");
+        origInputs.forEach((inp, idx) => {
+          if (inp.type === "checkbox" || inp.type === "radio") {
+            cloneInputs[idx].checked = inp.checked;
+          } else {
+            cloneInputs[idx].value = inp.value;
+          }
+        });
+
+        const studentDiv = document.createElement("div");
+        if (i > 0) studentDiv.className = "batch-student-separator";
+        studentDiv.appendChild(clone);
+        printWrapper.appendChild(studentDiv);
       });
 
-      container.innerHTML = fullBatchHtml;
+      originalContainer.style.display = "none";
+      document.body.appendChild(printWrapper);
 
       setTimeout(() => {
         window.print();
-        container.innerHTML = originalHtml;
-        currentStudentIdx = backupIdx;
-        loadStudentIntoUI(currentStudentIdx);
+        printWrapper.remove();
+        originalContainer.style.display = "block";
+        currentStudentIndex = backupIndex;
+        loadStudentIntoForm(currentStudentIndex);
       }, 500);
     }
 
@@ -1075,7 +1541,9 @@
       document.getElementById("modalMessage").textContent = msg;
       document.getElementById("modalIcon").textContent = "ℹ️";
       document.getElementById("modalActions").innerHTML = `
-        <button onclick="closeCustomModal()" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold px-4 py-2 rounded">समजले (OK)</button>
+        <button type="button" onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+          समजले (OK)
+        </button>
       `;
       document.getElementById("customModal").classList.remove("hidden");
     }
@@ -1086,8 +1554,12 @@
       document.getElementById("modalMessage").textContent = msg;
       document.getElementById("modalIcon").textContent = "❓";
       document.getElementById("modalActions").innerHTML = `
-        <button onclick="closeCustomModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold px-3 py-2 rounded">रद्द करा</button>
-        <button onclick="handleConfirmModal()" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold px-4 py-2 rounded">होय, पुढे जा</button>
+        <button type="button" onclick="closeCustomModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold px-3 py-2 rounded">
+          रद्द करा (Cancel)
+        </button>
+        <button type="button" onclick="handleConfirmModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+          होय, पुढे जा (Confirm)
+        </button>
       `;
       document.getElementById("customModal").classList.remove("hidden");
     }
@@ -1115,14 +1587,14 @@
       }, 3000);
     }
 
-    // Auto-save every 30 seconds
     setInterval(() => {
       saveCurrentStudentData(false);
     }, 30000);
 
     window.addEventListener("DOMContentLoaded", () => {
-      renderCurricularSubjects();
-      loadAllFromStorage();
+      buildAttendanceTable();
+      renderDomains();
+      loadAllFromLocalStorage();
     });
   </script>
 </body>
