@@ -33,21 +33,21 @@
       background-color: #fff;
     }
     .rubric-level-btn.active-nirjhar {
-      background-color: #0284c7 !important;
-      color: #ffffff !important;
-      border-color: #0369a1 !important;
+      background-color: #0284c7;
+      color: #ffffff;
+      border-color: #0369a1;
       font-weight: 700;
     }
     .rubric-level-btn.active-parvat {
-      background-color: #16a34a !important;
-      color: #ffffff !important;
-      border-color: #15803d !important;
+      background-color: #16a34a;
+      color: #ffffff;
+      border-color: #15803d;
       font-weight: 700;
     }
     .rubric-level-btn.active-aakash {
-      background-color: #9333ea !important;
-      color: #ffffff !important;
-      border-color: #7e22ce !important;
+      background-color: #9333ea;
+      color: #ffffff;
+      border-color: #7e22ce;
       font-weight: 700;
     }
     .student-pill.active-student {
@@ -99,23 +99,23 @@
 
       <!-- Quick Action Buttons -->
       <div class="flex flex-wrap items-center gap-1.5 text-xs">
-        <button type="button" onclick="loadTwentySampleStudents()" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-2.5 py-1.5 rounded shadow flex items-center gap-1">
+        <button onclick="loadTwentySampleStudents()" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-2.5 py-1.5 rounded shadow flex items-center gap-1">
           <span>👥 २० नमुना विद्यार्थी भरा</span>
         </button>
-        <button type="button" onclick="openStudentRosterModal()" class="bg-orange-800 hover:bg-orange-900 text-white px-2.5 py-1.5 rounded shadow flex items-center gap-1 font-medium">
+        <button onclick="openStudentRosterModal()" class="bg-orange-800 hover:bg-orange-900 text-white px-2.5 py-1.5 rounded shadow flex items-center gap-1 font-medium">
           <span>📋 विद्यार्थी यादी (<span id="totalStudentsCount">20</span>)</span>
         </button>
-        <button type="button" onclick="saveCurrentStudentData(true)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+        <button onclick="saveCurrentStudentData(true)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
           <span>💾 जतन करा (Save)</span>
         </button>
-        <button type="button" onclick="addNewStudent()" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-2.5 py-1.5 rounded shadow flex items-center gap-1">
+        <button onclick="addNewStudent()" class="bg-sky-600 hover:bg-sky-500 text-white font-medium px-2.5 py-1.5 rounded shadow flex items-center gap-1">
           <span>➕ नवीन जोडा</span>
         </button>
-        <button type="button" onclick="printCurrentStudent()" class="bg-purple-700 hover:bg-purple-600 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+        <button onclick="printCurrentStudent()" class="bg-purple-700 hover:bg-purple-600 text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
           <span>🖨️ चालू विद्यार्थी प्रिंट</span>
         </button>
-        <button type="button" onclick="printAllStudents()" class="bg-slate-900 hover:bg-black text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
-          <span>📚 सर्व प्रिंट</span>
+        <button onclick="printAllStudents()" class="bg-slate-900 hover:bg-black text-white font-bold px-3 py-1.5 rounded shadow flex items-center gap-1">
+          <span>📚 सर्व २० प्रिंट</span>
         </button>
       </div>
     </div>
@@ -143,7 +143,7 @@
       </div>
       <p id="modalMessage" class="text-sm text-gray-600 leading-relaxed mb-5"></p>
       <div class="flex justify-end gap-2" id="modalActions">
-        <button type="button" onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+        <button onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
           समजले (OK)
         </button>
       </div>
@@ -155,9 +155,9 @@
     <div class="bg-white rounded-xl max-w-3xl w-full p-5 shadow-2xl border border-orange-300 max-h-[90vh] flex flex-col">
       <div class="flex items-center justify-between border-b pb-3 mb-3">
         <h3 class="text-base font-bold text-orange-800 flex items-center gap-2">
-          <span>👥 विद्यार्थी व्यवस्थापन तक्ता</span>
+          <span>👥 विद्यार्थी व्यवस्थापन तक्ता (२० विद्यार्थ्यांची यादी)</span>
         </h3>
-        <button type="button" onclick="closeRosterModal()" class="text-gray-400 hover:text-gray-700 text-lg font-bold px-2">&times;</button>
+        <button onclick="closeRosterModal()" class="text-gray-400 hover:text-gray-700 text-lg font-bold px-2">&times;</button>
       </div>
       <p class="text-xs text-gray-500 mb-3">येथून तुम्ही कोणत्याही विद्यार्थ्याची माहिती त्वरित उघडू शकता, बदलू शकता किंवा माहिती डाउनलोड करू शकता.</p>
 
@@ -181,7 +181,7 @@
 
       <div class="flex flex-wrap justify-between items-center gap-2 mt-4 pt-3 border-t">
         <div class="flex gap-2 text-xs">
-          <button type="button" onclick="exportAllDataJSON()" class="bg-slate-700 hover:bg-slate-800 text-white px-3 py-1.5 rounded font-medium">
+          <button onclick="exportAllDataJSON()" class="bg-slate-700 hover:bg-slate-800 text-white px-3 py-1.5 rounded font-medium">
             📥 डेटा बॅकअप (JSON)
           </button>
           <label class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-3 py-1.5 rounded font-medium cursor-pointer">
@@ -190,10 +190,10 @@
           </label>
         </div>
         <div class="flex gap-2 text-xs">
-          <button type="button" onclick="addNewStudent(); closeRosterModal();" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded font-bold">
+          <button onclick="addNewStudent(); closeRosterModal();" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded font-bold">
             ➕ नवीन विद्यार्थी जोडा
           </button>
-          <button type="button" onclick="closeRosterModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-3 py-1.5 rounded font-medium">
+          <button onclick="closeRosterModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-3 py-1.5 rounded font-medium">
             बंद करा
           </button>
         </div>
@@ -439,19 +439,8 @@
                 <th class="border border-gray-300 p-1">मे</th>
               </tr>
             </thead>
-            <tbody>
-              <tr id="rowWorkDays">
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">कामाचे दिवस</td>
-              </tr>
-              <tr id="rowPresDays">
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थित दिवस</td>
-              </tr>
-              <tr id="rowAttPerc">
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थिती (% मध्ये)</td>
-              </tr>
-              <tr id="rowAttReason">
-                <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50 text-[10px]">कमी असल्यास कारणे</td>
-              </tr>
+            <tbody id="attendanceTableBody">
+              <!-- Dynamically populated -->
             </tbody>
           </table>
         </div>
@@ -697,7 +686,24 @@
           "CG. 3* सुदृढ आणि लवचीक शरीर विकसित होते."
         ],
         themeColor: "border-rose-400",
-        headerBg: "bg-rose-100 text-rose-900 border-rose-300"
+        headerBg: "bg-rose-100 text-rose-900 border-rose-300",
+        s1_data: {
+          competencies: [
+            "सूक्ष्म व स्थूल स्नायूंचा समन्वय साधणे (Fine & Gross Motor Skills).",
+            "स्वच्छता, सुरक्षितता व निरोगी सवयींचे पालन करणे.",
+            "विविध ज्ञानेंद्रियांच्या आधारे वस्तू ओळखणे व प्रतिसाद देणे."
+          ],
+          activities: [
+            "रेघेवर चालणे, लंगडी, उड्या मारणे व चेंडू झेलणे/फेकणे खेळ.",
+            "मातीकाम, कागद दुमडणे, मणी ओवणे व कात्रीने कातरणे.",
+            "डोळे झाकून आवाजाचा कानोसा घेणे व वास/स्पर्श ओळखून वस्तू सांगणे."
+          ],
+          questions: [
+            "चेंडू हवेत उडवून न पाडता झेलता येतो का?",
+            "दोऱ्यामध्ये सलग ५ मणी ओवून दाखवशील का?",
+            "स्पर्श करून ही वस्तू मऊ आहे की खडबडीत ते सांग?"
+          ]
+        }
       },
       {
         id: "domain2",
@@ -709,7 +715,24 @@
           "CG. 6* बालके स्वतः भोवतालच्या नैसर्गिक वातावरणाबद्दल कृतज्ञता भाव दर्शवितात."
         ],
         themeColor: "border-teal-400",
-        headerBg: "bg-teal-100 text-teal-900 border-teal-300"
+        headerBg: "bg-teal-100 text-teal-900 border-teal-300",
+        s1_data: {
+          competencies: [
+            "स्वतःच्या व इतरांच्या भावना ओळखणे आणि व्यक्त करणे.",
+            "वर्गमित्र व सहकाऱ्यांसोबत मिळून-मिसळून काम करणे.",
+            "निसर्ग, प्राणी व परिसरातील घटकांविषयी काळजी व आदर दाखवणे."
+          ],
+          activities: [
+            "भावमुद्रा ओळखण्याचा खेळ (आनंद, दुःख, राग, आश्चर्य दर्शवणे).",
+            "गटात खेळ खेळणे आणि खेळणी/साहित्य वाटून घेणे (Sharing).",
+            "वर्ग सजावट व शालेय परिसरातील वनस्पतींना पाणी घालणे."
+          ],
+          questions: [
+            "जेव्हा मित्र नाराज असतो, तेव्हा तू काय करतोस?",
+            "तुझ्या मित्राला मदतीची गरज असेल तर तू कशी मदत करशील?",
+            "आपल्या बागेतील झाडांची काळजी आपण कशी घ्यावी?"
+          ]
+        }
       },
       {
         id: "domain3",
@@ -720,7 +743,24 @@
           "CG. 8* बालकांची गणितीय समज विकसित होते आणि ती विविध राशी, आकार, मापे यांचा वापर करून जग समजून घेऊ शकतात."
         ],
         themeColor: "border-blue-400",
-        headerBg: "bg-blue-100 text-blue-900 border-blue-300"
+        headerBg: "bg-blue-100 text-blue-900 border-blue-300",
+        s1_data: {
+          competencies: [
+            "वस्तूंचे रंग, आकार, वजन व प्रकारानुसार वर्गीकरण करणे.",
+            "१ ते ९ पर्यंतच्या संख्यांची मोजणी व समोरासमोर जोड्या लावणे.",
+            "सोपे क्रम (Patterns) ओळखणे आणि पुढे चालू ठेवणे."
+          ],
+          activities: [
+            "रंगीबेरंगी ठोकळे, पाने किंवा बियांचे आकारानुसार वर्गीकरण करणे.",
+            "चित्रांतील वस्तूंशी अंकांच्या कार्ड्सच्या जोड्या जुळवणे.",
+            "मण्यांची किंवा पानांची क्रमाने रचना (उदा. १ लाल, १ पिवळा) पूर्ण करणे."
+          ],
+          questions: [
+            "यातील गोल आणि चौकोनी ठोकळे वेगळे करून दाखव?",
+            "टेबलावर किती पेन/खडू ठेवले आहेत ते मोजून सांग?",
+            "यानंतर कोणता रंग किंवा आकार येईल ते सांग पाहू?"
+          ]
+        }
       },
       {
         id: "domain4",
@@ -732,7 +772,24 @@
           "CG. 11* बालके भाषा दोन (L2) मध्ये वाचन व लेखनाचा आरंभ करतात."
         ],
         themeColor: "border-amber-400",
-        headerBg: "bg-amber-100 text-amber-900 border-amber-300"
+        headerBg: "bg-amber-100 text-amber-900 border-amber-300",
+        s1_data: {
+          competencies: [
+            "लक्षपूर्वक ऐकणे आणि ऐकलेल्या गोष्टीवर स्वतःच्या शब्दांत बोलणे.",
+            "चित्रांचे वर्णन करणे व चित्रांवरून गोष्ट सांगणे.",
+            "परिचित मुळाक्षरे व ध्वनींची (Phonics) ओळख दाखवणे."
+          ],
+          activities: [
+            "शिक्षकांनी सांगितलेली छोटी गोष्ट ऐकून त्यावर गप्पा मारणे.",
+            "चित्रकार्ड पाहून त्यातील प्रसंग व पात्रांविषयी स्वतः सांगणे.",
+            "'क', 'म', 'आ' या अक्षरांवरून सुरू होणाऱ्या वस्तू/चित्रे शोधणे."
+          ],
+          questions: [
+            "या चित्रात तुला काय-काय दिसत आहे ते सांग?",
+            "गोष्टीतील तुला सर्वात जास्त कोणती व्यक्ती/प्राणी आवडला आणि का?",
+            "'क' वरून सुरू होणारे दोन शब्द सांग पाहू?"
+          ]
+        }
       },
       {
         id: "domain5",
@@ -742,7 +799,24 @@
           "CG. 12* बालके दृश्य आणि ललितकलांमध्ये आपली क्षमता आणि संवेदनशीलता विकसित करतात आणि भावना कलेद्वारे व्यक्त करतात."
         ],
         themeColor: "border-pink-400",
-        headerBg: "bg-pink-100 text-pink-900 border-pink-300"
+        headerBg: "bg-pink-100 text-pink-900 border-pink-300",
+        s1_data: {
+          competencies: [
+            "विविध रंगांचा वापर करून रेघोट्या, ठसेकाम व चित्रे काढणे.",
+            "ताला-सुरात बालगीते, अभिनयगीते व बडबडगीते म्हणणे.",
+            "छोट्या संवादांमध्ये व बालनाट्यात सहभागी होणे."
+          ],
+          activities: [
+            "बोटांचे ठसे, भाजीपाल्याचे ठसे (भेंडी/बटाटा) वापरून नक्षी तयार करणे.",
+            "हातवारे व हावभावांसह बालगीत गायन सादर करणे.",
+            "प्राणी किंवा पक्ष्यांचा आवाज काढून त्यांची नक्कल करणे."
+          ],
+          questions: [
+            "तुला आवडणारे एखादे बडबडगीत चालीवर म्हणून दाखवशील का?",
+            "मांजराचा किंवा चिमणीचा आवाज कसा असतो ते दाखव?",
+            "हे चित्र काढताना तू कोणते रंग वापरले आहेत?"
+          ]
+        }
       },
       {
         id: "domain5_1",
@@ -752,29 +826,53 @@
           "CG. 13* बालके अध्ययनाच्या सवयी विकसित करतात, ज्यामुळे त्यांना शालेय वर्गासारख्या औपचारिक अध्ययन वातावरणात सक्रिय राहता येते."
         ],
         themeColor: "border-emerald-400",
-        headerBg: "bg-emerald-100 text-emerald-900 border-emerald-300"
+        headerBg: "bg-emerald-100 text-emerald-900 border-emerald-300",
+        s1_data: {
+          competencies: [
+            "नवीन खेळ व कृती शिकण्यासाठी उत्सुकता व जिज्ञासा दाखवणे.",
+            "दिलेल्या सूचनेनुसार कृती पूर्ण होईपर्यंत एकाग्रता राखणे.",
+            "शालेय साहित्याची स्वतःहून योग्य मांडणी व स्वच्छता ठेवणे."
+          ],
+          activities: [
+            "कोडे (Puzzle) सोडवणे किंवा स्वतःहून चित्र पूर्ण करणे.",
+            "कृती संपल्यावर स्वतःचे साहित्य, रंग व खेळणी जागी ठेवणे.",
+            "वर्गात नवीन साहित्य पाहिल्यावर त्याविषयी प्रश्न विचारणे."
+          ],
+          questions: [
+            "तुला या साहित्याने काय बनवायला आवडेल?",
+            "काम पूर्ण झाल्यावर दप्तर आणि खेळणी तू स्वतः जाग्यावर ठेवतोस का?",
+            "आज वर्गात कोणती नवीन गोष्ट शिकायला तुला आवडले?"
+          ]
+        }
       }
     ];
 
     let studentsDatabase = [];
     let currentStudentIndex = 0;
 
-    // Render Attendance Table Rows cleanly
-    function buildAttendanceTable() {
-      const rowWork = document.getElementById("rowWorkDays");
-      const rowPres = document.getElementById("rowPresDays");
-      const rowPerc = document.getElementById("rowAttPerc");
-      const rowReas = document.getElementById("rowAttReason");
-
-      for (let i = 0; i < 12; i++) {
-        rowWork.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="number" id="work_day_${i}" class="w-12 text-center p-1 work-days" oninput="calculateAttendance(${i})"></td>`);
-        rowPres.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="number" id="pres_day_${i}" class="w-12 text-center p-1 pres-days" oninput="calculateAttendance(${i})"></td>`);
-        rowPerc.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-1 font-bold text-gray-700 att-perc" id="att_perc_${i}">-</td>`);
-        rowReas.insertAdjacentHTML('beforeend', `<td class="border border-gray-300 p-0.5"><input type="text" id="att_reason_${i}" class="w-12 text-[10px] p-0.5"></td>`);
-      }
+    function renderAttendanceTable() {
+      const tbody = document.getElementById("attendanceTableBody");
+      if (!tbody) return;
+      tbody.innerHTML = `
+        <tr>
+          <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">कामाचे दिवस</td>
+          ${Array.from({length: 12}).map((_, i) => `<td class="border border-gray-300 p-0.5"><input type="number" id="work_day_${i}" class="w-12 text-center p-1 work-days" oninput="calculateAttendance(${i})"></td>`).join("")}
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थित दिवस</td>
+          ${Array.from({length: 12}).map((_, i) => `<td class="border border-gray-300 p-0.5"><input type="number" id="pres_day_${i}" class="w-12 text-center p-1 pres-days" oninput="calculateAttendance(${i})"></td>`).join("")}
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50">उपस्थिती (% मध्ये)</td>
+          ${Array.from({length: 12}).map((_, i) => `<td class="border border-gray-300 p-1 font-bold text-gray-700 att-perc" id="att_perc_${i}">-</td>`).join("")}
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-1 font-semibold text-left bg-gray-50 text-[10px]">कमी असल्यास कारणे</td>
+          ${Array.from({length: 12}).map((_, i) => `<td class="border border-gray-300 p-0.5"><input type="text" id="att_reason_${i}" class="w-12 text-[10px] p-0.5"></td>`).join("")}
+        </tr>
+      `;
     }
 
-    // Render Domain Pages dynamically
     function renderDomains() {
       const container = document.getElementById("domainsContainer");
       container.innerHTML = "";
@@ -796,22 +894,42 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-6">
-            <div class="border border-gray-300 rounded-lg p-3 bg-orange-50/20 space-y-2">
-              <div class="font-bold text-sm text-orange-900 border-b border-orange-200 pb-1">🍁 सत्र पहिले (Semester 1)</div>
-              <div>
-                <label class="font-semibold block text-gray-700">क्षमता :</label>
-                <input type="text" id="${dom.id}_s1_comp" class="w-full text-xs" placeholder="निवडलेली क्षमता...">
+            <!-- सत्र पहिले (Dropdown Selectors + Custom Fallback Text) -->
+            <div class="border border-gray-300 rounded-lg p-3 bg-orange-50/20 space-y-2.5">
+              <div class="font-bold text-sm text-orange-900 border-b border-orange-200 pb-1 flex items-center justify-between">
+                <span>🍁 सत्र पहिले (Semester 1)</span>
+                <span class="text-[10px] font-normal text-orange-700 bg-orange-100 px-1.5 py-0.5 rounded">ड्रॉपडाऊन यादी</span>
               </div>
+              
               <div>
-                <label class="font-semibold block text-gray-700">मूल्यांकनासाठी घेतलेली कृती / उपक्रम :</label>
-                <textarea id="${dom.id}_s1_act" rows="2" class="w-full text-xs" placeholder="घेतलेला उपक्रम..."></textarea>
+                <label class="font-semibold block text-gray-700 mb-0.5">क्षमता :</label>
+                <select id="${dom.id}_s1_comp_select" onchange="handleDropdownChange('${dom.id}_s1_comp', this.value)" class="w-full text-xs bg-white">
+                  ${dom.s1_data.competencies.map(c => `<option value="${c}">${c}</option>`).join("")}
+                  <option value="__custom__">➕ इतर (स्वतः टाईप करा...)</option>
+                </select>
+                <input type="text" id="${dom.id}_s1_comp" class="w-full text-xs mt-1.5 hidden" placeholder="स्वतःची क्षमता लिहा...">
               </div>
+
               <div>
-                <label class="font-semibold block text-gray-700">मूल्यांकनासाठीचे प्रश्न :</label>
-                <textarea id="${dom.id}_s1_quest" rows="2" class="w-full text-xs" placeholder="विचारलेले प्रश्न..."></textarea>
+                <label class="font-semibold block text-gray-700 mb-0.5">मूल्यांकनासाठी घेतलेली कृती / उपक्रम :</label>
+                <select id="${dom.id}_s1_act_select" onchange="handleDropdownChange('${dom.id}_s1_act', this.value)" class="w-full text-xs bg-white">
+                  ${dom.s1_data.activities.map(a => `<option value="${a}">${a}</option>`).join("")}
+                  <option value="__custom__">➕ इतर (स्वतः उपक्रम टाईप करा...)</option>
+                </select>
+                <textarea id="${dom.id}_s1_act" rows="2" class="w-full text-xs mt-1.5 hidden" placeholder="स्वतः घेतलेला उपक्रम लिहा..."></textarea>
+              </div>
+
+              <div>
+                <label class="font-semibold block text-gray-700 mb-0.5">मूल्यांकनासाठीचे प्रश्न :</label>
+                <select id="${dom.id}_s1_quest_select" onchange="handleDropdownChange('${dom.id}_s1_quest', this.value)" class="w-full text-xs bg-white">
+                  ${dom.s1_data.questions.map(q => `<option value="${q}">${q}</option>`).join("")}
+                  <option value="__custom__">➕ इतर (स्वतः प्रश्न टाईप करा...)</option>
+                </select>
+                <textarea id="${dom.id}_s1_quest" rows="2" class="w-full text-xs mt-1.5 hidden" placeholder="विचारलेले प्रश्न लिहा..."></textarea>
               </div>
             </div>
 
+            <!-- सत्र दुसरे (Manual Input / Textarea) -->
             <div class="border border-gray-300 rounded-lg p-3 bg-blue-50/20 space-y-2">
               <div class="font-bold text-sm text-blue-900 border-b border-blue-200 pb-1">🌱 सत्र दुसरे (Semester 2)</div>
               <div>
@@ -989,6 +1107,18 @@
       });
     }
 
+    function handleDropdownChange(targetInputId, selectedValue) {
+      const inputEl = document.getElementById(targetInputId);
+      if (!inputEl) return;
+      if (selectedValue === "__custom__") {
+        inputEl.classList.remove("hidden");
+        inputEl.focus();
+      } else {
+        inputEl.classList.add("hidden");
+        inputEl.value = selectedValue;
+      }
+    }
+
     function renderRubricButtons(domId, sem, aspect) {
       const key = `${domId}_${sem}_${aspect}`;
       return `
@@ -1051,10 +1181,9 @@
         preview.innerHTML = `<img src="${reader.result}" class="w-full h-full object-cover">`;
         if (studentsDatabase[currentStudentIndex]) {
           studentsDatabase[currentStudentIndex].photoData = reader.result;
-          saveAllToLocalStorage();
         }
       };
-      if (event.target.files && event.target.files[0]) {
+      if (event.target.files[0]) {
         reader.readAsDataURL(event.target.files[0]);
       }
     }
@@ -1113,7 +1242,7 @@
         motherName: s.gender === "मुलगी" ? "सुनिता सावंत" : "सुवर्णा गायकवाड",
         motherEdu: "१० वी पास",
         motherOcc: "गृहिणी",
-        fatherName: s.name.split(" ")[1] ? s.name.split(" ")[1] + " " + (s.name.split(" ")[2] || "") : "संतोष गायकवाड",
+        fatherName: s.name.split(" ")[1] + " " + s.name.split(" ")[2],
         fatherEdu: "१२ वी पास",
         fatherOcc: "शेती / व्यवसाय",
         siblingsCount: "१",
@@ -1150,16 +1279,15 @@
       };
 
       const workDays = [12, 24, 22, 21, 18, 22, 24, 23, 22, 23, 20, 0];
-      for(let i = 0; i < 12; i++) {
+      for(let i=0; i<12; i++) {
         base[`work_day_${i}`] = workDays[i];
         base[`pres_day_${i}`] = Math.max(0, workDays[i] - (index % 3));
-        base[`att_reason_${i}`] = "";
       }
 
       DOMAINS.forEach(dom => {
-        base[`${dom.id}_s1_comp`] = "सदर क्षेत्रातील पायाभूत क्षमतांचा विकास.";
-        base[`${dom.id}_s1_act`] = "विविध खेळ व कृतींद्वारे प्रात्यक्षिक घेणे.";
-        base[`${dom.id}_s1_quest`] = "प्रश्नांची उत्तरे स्वतःच्या शब्दांत देणे.";
+        base[`${dom.id}_s1_comp`] = dom.s1_data.competencies[0];
+        base[`${dom.id}_s1_act`] = dom.s1_data.activities[0];
+        base[`${dom.id}_s1_quest`] = dom.s1_data.questions[0];
         base[`${dom.id}_s1_remark`] = "कामगिरी उत्तम आहे.";
 
         base[`${dom.id}_s2_comp`] = "स्वतंत्रपणे क्षमतांचा प्रत्यक्ष वापर करणे.";
@@ -1179,13 +1307,11 @@
         base[`${dom.id}_s1_self_easy`] = "होय";
         base[`${dom.id}_s1_self_help`] = "नाही";
         base[`${dom.id}_s1_peer_like`] = "होय";
-        base[`${dom.id}_s1_parent_remark`] = "छान प्रगती आहे.";
 
         base[`${dom.id}_s2_self_like`] = "होय";
         base[`${dom.id}_s2_self_easy`] = "होय";
         base[`${dom.id}_s2_self_help`] = "नाही";
         base[`${dom.id}_s2_peer_like`] = "होय";
-        base[`${dom.id}_s2_parent_remark`] = "अभ्यासात खूप रस घेतो.";
       });
 
       return base;
@@ -1199,7 +1325,7 @@
       saveAllToLocalStorage();
       renderStudentPills();
       loadStudentIntoForm(0);
-      showCustomModal("✨ २० विद्यार्थ्यांची माहिती भरली!", "२० विद्यार्थ्यांची संपूर्ण माहिती यशस्वीरीत्या भरली आहे.");
+      showCustomModal("✨ २० विद्यार्थ्यांची माहिती भरली!", "२० विद्यार्थ्यांची संपूर्ण माहिती यशस्वीरीत्या भरली आहे. वरील पट्टीतील बटनांवर क्लिक करून तुम्ही कोणत्याही विद्यार्थ्याचे प्रगतिपत्रक पाहू शकता.");
     }
 
     function renderStudentPills() {
@@ -1262,7 +1388,7 @@
 
       const inputs = document.querySelectorAll("input, textarea, select");
       inputs.forEach(el => {
-        if (el.id) {
+        if (el.id && !el.id.endsWith("_select")) {
           if (el.type === "checkbox") {
             data[el.id] = el.checked;
           } else if (el.type === "radio") {
@@ -1280,7 +1406,7 @@
 
       saveAllToLocalStorage();
       if (showSuccessToast) {
-        showToast(`विद्यार्थी क्र. ${currentStudentIndex + 1} ची माहिती सेव्ह केली!`);
+        showToast(`विद्यार्थी क्र. ${currentStudentIndex + 1} (${data.studentName || ''}) ची माहिती सेव्ह केली!`);
       }
     }
 
@@ -1295,6 +1421,26 @@
             el.checked = !!data[id];
           } else {
             el.value = data[id];
+          }
+        }
+
+        // Sync Dropdowns with saved values
+        const selEl = document.getElementById(id + "_select");
+        if (selEl) {
+          const val = data[id] || "";
+          let matched = false;
+          for (let opt of selEl.options) {
+            if (opt.value === val) {
+              selEl.value = val;
+              matched = true;
+              break;
+            }
+          }
+          if (!matched && val !== "") {
+            selEl.value = "__custom__";
+            el.classList.remove("hidden");
+          } else {
+            el.classList.add("hidden");
           }
         }
       });
@@ -1336,7 +1482,7 @@
         });
       });
 
-      for(let i = 0; i < 12; i++) {
+      for(let i=0; i<12; i++) {
         calculateAttendance(i);
       }
 
@@ -1399,11 +1545,11 @@
           <td class="p-2 border-b">${std.grade || 'इ. पहिली'}</td>
           <td class="p-2 border-b">${std.mobile || '-'}</td>
           <td class="p-2 border-b text-center space-x-1">
-            <button type="button" onclick="selectStudentFromRoster(${i})" class="bg-orange-600 hover:bg-orange-700 text-white px-2 py-1 rounded text-[11px] font-bold">
+            <button onclick="selectStudentFromRoster(${i})" class="bg-orange-600 hover:bg-orange-700 text-white px-2 py-1 rounded text-[11px] font-bold">
               उघडा
             </button>
             ${studentsDatabase.length > 1 ? `
-              <button type="button" onclick="confirmDeleteStudent(${i})" class="bg-rose-100 hover:bg-rose-200 text-rose-700 px-2 py-1 rounded text-[11px]">
+              <button onclick="confirmDeleteStudent(${i})" class="bg-rose-100 hover:bg-rose-200 text-rose-700 px-2 py-1 rounded text-[11px]">
                 हटवा
               </button>
             ` : ''}
@@ -1444,11 +1590,11 @@
       const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(studentsDatabase, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute("href", dataStr);
-      downloadAnchor.setAttribute("download", `HPC_Students_Data_${new Date().toISOString().slice(0,10)}.json`);
+      downloadAnchor.setAttribute("download", `HPC_20_Students_Data_${new Date().toISOString().slice(0,10)}.json`);
       document.body.appendChild(downloadAnchor);
       downloadAnchor.click();
       downloadAnchor.remove();
-      showToast("विद्यार्थ्यांचा डेटा डाऊनलोड झाला!");
+      showToast("सर्व २० विद्यार्थ्यांचा डेटा डाऊनलोड झाला!");
     }
 
     function importDataJSON(event) {
@@ -1493,43 +1639,29 @@
     }
 
     function executeBatchPrint() {
-      const originalContainer = document.getElementById("printableCardContainer");
-      const backupIndex = currentStudentIndex;
+      const originalIndex = currentStudentIndex;
+      const container = document.getElementById("printableCardContainer");
+      const tempWrapper = document.createElement("div");
+      tempWrapper.id = "batchPrintContainer";
 
-      // Sync form into state
-      saveCurrentStudentData(false);
-
-      const printWrapper = document.createElement("div");
-      printWrapper.id = "printBatchWrapper";
-
-      studentsDatabase.forEach((std, i) => {
-        loadStudentIntoForm(i);
-        const clone = originalContainer.cloneNode(true);
-        // Sync inputs from original to clone
-        const origInputs = originalContainer.querySelectorAll("input, textarea, select");
-        const cloneInputs = clone.querySelectorAll("input, textarea, select");
-        origInputs.forEach((inp, idx) => {
-          if (inp.type === "checkbox" || inp.type === "radio") {
-            cloneInputs[idx].checked = inp.checked;
-          } else {
-            cloneInputs[idx].value = inp.value;
-          }
-        });
-
-        const studentDiv = document.createElement("div");
-        if (i > 0) studentDiv.className = "batch-student-separator";
-        studentDiv.appendChild(clone);
-        printWrapper.appendChild(studentDiv);
+      studentsDatabase.forEach((_, idx) => {
+        loadStudentIntoForm(idx);
+        const clone = container.cloneNode(true);
+        clone.id = `printStudent_${idx}`;
+        if (idx > 0) {
+          clone.classList.add("batch-student-separator");
+        }
+        tempWrapper.appendChild(clone);
       });
 
-      originalContainer.style.display = "none";
-      document.body.appendChild(printWrapper);
+      container.classList.add("hidden");
+      document.body.appendChild(tempWrapper);
 
       setTimeout(() => {
         window.print();
-        printWrapper.remove();
-        originalContainer.style.display = "block";
-        currentStudentIndex = backupIndex;
+        tempWrapper.remove();
+        container.classList.remove("hidden");
+        currentStudentIndex = originalIndex;
         loadStudentIntoForm(currentStudentIndex);
       }, 500);
     }
@@ -1541,7 +1673,7 @@
       document.getElementById("modalMessage").textContent = msg;
       document.getElementById("modalIcon").textContent = "ℹ️";
       document.getElementById("modalActions").innerHTML = `
-        <button type="button" onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+        <button onclick="closeCustomModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
           समजले (OK)
         </button>
       `;
@@ -1554,10 +1686,10 @@
       document.getElementById("modalMessage").textContent = msg;
       document.getElementById("modalIcon").textContent = "❓";
       document.getElementById("modalActions").innerHTML = `
-        <button type="button" onclick="closeCustomModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold px-3 py-2 rounded">
+        <button onclick="closeCustomModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-semibold px-3 py-2 rounded">
           रद्द करा (Cancel)
         </button>
-        <button type="button" onclick="handleConfirmModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
+        <button onclick="handleConfirmModal()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2 rounded">
           होय, पुढे जा (Confirm)
         </button>
       `;
@@ -1592,7 +1724,7 @@
     }, 30000);
 
     window.addEventListener("DOMContentLoaded", () => {
-      buildAttendanceTable();
+      renderAttendanceTable();
       renderDomains();
       loadAllFromLocalStorage();
     });
